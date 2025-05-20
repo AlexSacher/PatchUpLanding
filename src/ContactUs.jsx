@@ -22,7 +22,9 @@ const ContactUs = () => {
                 }}
             >
                 <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Get in Touch</h2>
-                <form>
+                <form
+                    action="https://formspree.io/f/xvgayygr"
+                    method="POST">
                     <div style={{ marginBottom: '1.5rem' }}>
                         <label htmlFor="name" style={{ display: 'block', marginBottom: '.5rem' }}>Name</label>
                         <input

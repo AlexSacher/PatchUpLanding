@@ -32,7 +32,7 @@ const ForStudents = ({ isDesktop }) => {
                     </div>
                 )}
                 {/* Right column */}
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                     <Typography
                         variant="h2"
                         style={{
