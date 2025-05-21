@@ -75,7 +75,7 @@ const TopPart = ({ isDesktop }) => {
 
                 {isDesktop && (
                     <motion.img
-                        src="/landing trans.png"
+                        src="landing trans.png"
                         alt="Illustration"
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}

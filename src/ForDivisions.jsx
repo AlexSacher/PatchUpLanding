@@ -64,7 +64,7 @@ const ForStudents = ({ isDesktop }) => {
 
 
                         <motion.img
-                            src="/division trans2.png"
+                            src="division trans2.png"
                             alt="Illustration"
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1.0 }}
