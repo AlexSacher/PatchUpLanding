@@ -1,91 +1,99 @@
-import React from "react";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { motion } from "framer-motion";
 
+const Badge = ({ label, color = "#00A2E8" }) => (
+    <div style={{
+        display: "inline-block",
+        background: `${color}18`,
+        color,
+        padding: "0.35rem 1rem",
+        borderRadius: "999px",
+        fontSize: "0.78rem",
+        fontWeight: 700,
+        letterSpacing: "0.08em",
+        textTransform: "uppercase",
+        marginBottom: "0.75rem",
+    }}>
+        {label}
+    </div>
+);
+
+const cards = [
+    {
+        title: "Tailored Activities",
+        description: "Students can select from a variety of tailored regulation activities that meet their unique needs and preferences.",
+    },
+    {
+        title: "Consistent, Flexible Support",
+        description: "PatchUp provides a consistent and reliable experience, regardless of available personnel.",
+    },
+];
+
 const ForStudents = ({ isDesktop }) => {
-    const paragraphs = [
-        "Students can select from a variety of tailored regulation activities that meet their unique needs and preferences.",
-        "PatchUp provides a consistent and reliable experience, regardless of available personnel."
-    ]
     return (
-        <section
-            style={{
-                // height: '80vh', 
-                backgroundColor: '#e3f2fd',
-                padding: '1rem 2rem'
-            }}
-        >
-            <Typography
-                variant="h2"
-                style={{
-                    fontSize: '3rem',
-                    marginBottom: '1rem',
-                    alignContent: 'center',
-                    textAlign: 'center'
-                }}>
-                How we support
-            </Typography>
-            <div style={{ display: 'flex', gap: '4rem', maxWidth: '1000px', margin: '0 auto' }}>
-
-                {/* Left column */}
-
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                    <Typography
-                        variant="h2"
-                        style={{
-                            fontSize: '2rem',
-                            // marginBottom: '1rem'
-                            textAlign: isDesktop ? 'left' : 'center'
-
-                        }}
-                    >
-                        Students
-                    </Typography>
-                    {["Tailored Activities", "Consistent, Flexible Support",].map((text, index) => (
+        <section style={{ backgroundColor: "#F7FBFF", padding: "5rem 2rem" }}>
+            <div style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "4rem",
+                maxWidth: "1100px",
+                margin: "0 auto",
+                flexDirection: isDesktop ? "row" : "column",
+            }}>
+                <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+                    <div>
+                        <Badge label="For Students" color="#00A2E8" />
+                        <Typography variant="h3" style={{ fontSize: "2.2rem", color: "#0A2540", lineHeight: 1.2 }}>
+                            Putting students first
+                        </Typography>
+                    </div>
+                    {cards.map((card, i) => (
                         <motion.div
-                            key={index}
-                            initial={{ opacity: 0, x: -100 }}
+                            key={i}
+                            initial={{ opacity: 0, x: -40 }}
                             whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ delay: index * 0.3, duration: 0.8 }}
                             viewport={{ once: true }}
+                            transition={{ delay: i * 0.2, duration: 0.6 }}
                             style={{
-                                background: '#ffffff',
-                                padding: '2rem',
-                                borderRadius: '12px',
-                                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-                                textAlign: 'center'
+                                background: "#fff",
+                                padding: "1.5rem 1.75rem",
+                                borderRadius: "14px",
+                                boxShadow: "0 4px 20px rgba(0,0,0,0.06)",
+                                borderLeft: "4px solid #00A2E8",
                             }}
                         >
-                            <Typography variant="h6" style={{ marginBottom: '1rem' }}>
-                                {text}
+                            <Typography variant="h6" style={{ marginBottom: "0.5rem", color: "#0A2540", fontSize: "1rem" }}>
+                                {card.title}
                             </Typography>
-                            <Typography variant="body2" >
-                                {paragraphs[index]}
+                            <Typography variant="body2" style={{ color: "#546E7A", lineHeight: 1.75 }}>
+                                {card.description}
                             </Typography>
-
                         </motion.div>
                     ))}
                 </div>
 
-                {/* Right column */}
                 {isDesktop && (
-                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '3rem', justifyContent: 'center' }}>
-
-
-                        <motion.img
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                        style={{ flex: 1, display: "flex", justifyContent: "center" }}
+                    >
+                        <img
                             src="student trans.png"
-                            alt="Illustration"
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.7, duration: 0.6 }}
-                            style={{ width: "400px", borderRadius: "12px" }}
+                            alt="Students"
+                            style={{
+                                width: "420px",
+                                maxWidth: "100%",
+                                filter: "drop-shadow(0 10px 30px rgba(0,162,232,0.18))",
+                            }}
                         />
-
-
-                    </div>
+                    </motion.div>
                 )}
             </div>
         </section>
-    )
-}
+    );
+};
+
 export default ForStudents;
