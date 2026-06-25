@@ -1,0 +1,242 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - banner:
+      - navigation [ref=e4]:
+        - generic [ref=e6]:
+          - link "home" [ref=e8] [cursor=pointer]:
+            - /url: /
+            - img "PatchUp" [ref=e9]
+          - list [ref=e11]:
+            - listitem [ref=e12]:
+              - link "How it works" [ref=e13] [cursor=pointer]:
+                - /url: "#link"
+            - listitem [ref=e14]:
+              - link "Lessons & Activities" [ref=e15] [cursor=pointer]:
+                - /url: "#link"
+            - listitem [ref=e16]:
+              - link "For Teachers" [ref=e17] [cursor=pointer]:
+                - /url: "#link"
+            - listitem [ref=e18]:
+              - link "About" [ref=e19] [cursor=pointer]:
+                - /url: "#link"
+          - generic [ref=e21]:
+            - button "Sign in" [ref=e22] [cursor=pointer]:
+              - generic [ref=e23]: Sign in
+            - button "Get started free" [ref=e24] [cursor=pointer]:
+              - generic [ref=e25]: Get started free
+    - main [ref=e26]:
+      - generic [ref=e27]:
+        - img [ref=e29]
+        - generic [ref=e2430]:
+          - generic [ref=e2431]:
+            - heading "Helping kids feel calm, kind, and connected" [level=1] [ref=e2432]:
+              - generic [ref=e2433]: Helping kids feel calm, kind, and connected
+              - generic [ref=e2434]: Helping
+              - generic [ref=e2436]: kids
+              - generic [ref=e2438]: feel
+              - generic [ref=e2440]: calm,
+              - generic [ref=e2442]: kind,
+              - generic [ref=e2444]: and
+              - generic [ref=e2446]: connected
+            - paragraph [ref=e2447]: "PatchUp gives K–12 teachers ready-to-run lessons, activities, and check-ins for social-emotional learning and belonging — the kind students actually look forward to. No prep, no accounts: just share a code and go."
+            - button "Get started free" [ref=e2449] [cursor=pointer]:
+              - generic [ref=e2450]: Get started free
+          - generic [ref=e2452]:
+            - img
+  - generic [ref=e2458]:
+    - img
+    - generic [ref=e2464]:
+      - paragraph [ref=e2466]:
+        - img [ref=e2467]
+        - text: Ready-to-run lessons
+      - heading "Lessons kids actually look forward to" [level=2] [ref=e2470]:
+        - text: Lessons kids actually
+        - text: look forward to
+      - paragraph [ref=e2472]: Step-by-step SEL and belonging lessons you can open and teach today — no prep, no planning. Each one gives students the language and tools to understand themselves and the people around them.
+      - button "Get started free" [ref=e2474] [cursor=pointer]:
+        - generic [ref=e2475]: Get started free
+  - generic [ref=e2478]:
+    - img
+    - generic [ref=e2484]:
+      - paragraph [ref=e2486]:
+        - img [ref=e2487]
+        - text: Daily check-ins
+      - heading "Know how the room feels before you start" [level=2] [ref=e2491]:
+        - text: Know how the room
+        - text: feels before you start
+      - paragraph [ref=e2493]: Quick check-ins let every student share how they're doing in seconds. You get a read on the whole class at a glance — so you can meet kids where they are before the lesson even begins.
+      - button "Get started free" [ref=e2495] [cursor=pointer]:
+        - generic [ref=e2496]: Get started free
+  - generic [ref=e2499]:
+    - img
+    - generic [ref=e2505]:
+      - paragraph [ref=e2507]:
+        - img [ref=e2508]
+        - text: Standalone activities
+      - heading "A calm-down or reset, ready in a tap" [level=2] [ref=e2512]:
+        - text: A calm-down or reset,
+        - text: ready in a tap
+      - paragraph [ref=e2514]: Breathing, grounding, gratitude, and more — drop-in activities you can run any moment of the day. Perfect for transitions, tough moments, or whenever the class needs to reset together.
+      - button "Get started free" [ref=e2516] [cursor=pointer]:
+        - generic [ref=e2517]: Get started free
+  - generic [ref=e2521]:
+    - paragraph [ref=e2522]:
+      - img [ref=e2523]
+      - text: Insights · an optional Classroom+ add-on
+    - generic [ref=e2525]:
+      - generic [ref=e2526]:
+        - heading "How one class answered \"How are you feeling?\" — before and after a few weeks of check-ins" [level=3] [ref=e2527]
+        - generic [ref=e2528]:
+          - generic [ref=e2529]:
+            - button "Before" [ref=e2530]:
+              - generic [ref=e2532]: Before
+            - button "After" [ref=e2533]:
+              - generic [ref=e2535]: After
+          - button "Replay" [ref=e2536]:
+            - img [ref=e2537]
+            - text: Replay
+        - generic [ref=e2540]:
+          - generic [ref=e2542]: Share of responses
+          - generic [ref=e2543]:
+            - generic [ref=e2546]:
+              - generic [ref=e2548]: 10%
+              - generic [ref=e2551]: 20%
+              - generic [ref=e2554]: 30%
+              - generic [ref=e2557]: 40%
+              - generic [ref=e2560]: 50%
+            - generic [ref=e2577]:
+              - generic [ref=e2578]: Calm
+              - generic [ref=e2579]: Okay
+              - generic [ref=e2580]: Frustrated
+              - generic [ref=e2581]: Overwhelmed
+      - generic [ref=e2582]:
+        - heading "Watch more students show up ready to learn" [level=2] [ref=e2584]
+        - paragraph [ref=e2586]: A few minutes of SEL a day adds up. As students get the language to name what they feel and simple tools to reset, the whole room starts to settle.
+        - paragraph [ref=e2588]: In this class, students answering Calm or Okay grew from 47% to 80% — and you can feel the difference the moment you walk in.
+  - generic [ref=e2590]:
+    - generic [ref=e2591]:
+      - heading "Pricing that grows with your school" [level=2] [ref=e2592]
+      - paragraph [ref=e2593]: Classroom is free for teachers. Add Insights with Classroom+ whenever you want to see how students are doing over time.
+      - generic [ref=e2594]:
+        - generic [ref=e2595]:
+          - button "Monthly" [ref=e2596]
+          - button "Annually" [ref=e2597]
+        - paragraph [ref=e2598]: Save 25% on annual billing
+    - generic [ref=e2599]:
+      - generic [ref=e2601]:
+        - heading "Classroom" [level=3] [ref=e2602]
+        - paragraph [ref=e2603]: Everything a teacher needs to run SEL and belonging in one classroom.
+        - generic [ref=e2604]: $0
+        - paragraph [ref=e2605]: Free forever
+        - button "Get started free" [ref=e2606] [cursor=pointer]:
+          - generic [ref=e2607]: Get started free
+        - list [ref=e2608]:
+          - listitem [ref=e2609]:
+            - img [ref=e2610]
+            - generic [ref=e2612]: All SEL & belonging lessons, activities, and check-ins
+          - listitem [ref=e2613]:
+            - img [ref=e2614]
+            - generic [ref=e2616]: Unlimited classes
+          - listitem [ref=e2617]:
+            - img [ref=e2618]
+            - generic [ref=e2620]: Students join with a code — no accounts
+          - listitem [ref=e2621]:
+            - img [ref=e2622]
+            - generic [ref=e2624]: In-the-moment class check-ins
+        - paragraph [ref=e2625]: Insights & data available with Classroom+
+      - generic [ref=e2627]:
+        - heading "Classroom+" [level=3] [ref=e2628]
+        - paragraph [ref=e2629]: Adds Insights — see how your students are doing over time.
+        - generic [ref=e2630]: $6
+        - paragraph [ref=e2631]: per teacher / month
+        - button "Book a demo" [ref=e2632] [cursor=pointer]:
+          - generic [ref=e2633]: Book a demo
+        - generic [ref=e2634]:
+          - img [ref=e2635]
+          - text: Includes Insights
+        - paragraph [ref=e2637]: "Everything in Classroom, plus:"
+        - list [ref=e2638]:
+          - listitem [ref=e2639]:
+            - img [ref=e2640]
+            - generic [ref=e2642]: Trends over time — before vs. after
+          - listitem [ref=e2643]:
+            - img [ref=e2644]
+            - generic [ref=e2646]: Class & student progress views
+          - listitem [ref=e2647]:
+            - img [ref=e2648]
+            - generic [ref=e2650]: Export & share reports
+          - listitem [ref=e2651]:
+            - img [ref=e2652]
+            - generic [ref=e2654]: Priority email & chat support
+      - generic [ref=e2656]:
+        - heading "District" [level=3] [ref=e2657]
+        - paragraph [ref=e2658]: For districts and divisions supporting many schools.
+        - generic [ref=e2659]: Custom
+        - paragraph [ref=e2660]: Let's talk
+        - button "Contact us" [ref=e2661] [cursor=pointer]:
+          - generic [ref=e2662]: Contact us
+        - generic [ref=e2663]:
+          - img [ref=e2664]
+          - text: Includes Insights
+        - paragraph [ref=e2666]: "Everything in Classroom+, plus:"
+        - list [ref=e2667]:
+          - listitem [ref=e2668]:
+            - img [ref=e2669]
+            - generic [ref=e2671]: District-wide onboarding & training
+          - listitem [ref=e2672]:
+            - img [ref=e2673]
+            - generic [ref=e2675]: SSO & roster sync
+          - listitem [ref=e2676]:
+            - img [ref=e2677]
+            - generic [ref=e2679]: Dedicated success manager
+          - listitem [ref=e2680]:
+            - img [ref=e2681]
+            - generic [ref=e2683]: Custom agreements & invoicing
+  - generic [ref=e2685]:
+    - generic [ref=e2686]:
+      - heading "Frequently Asked Questions" [level=2] [ref=e2687]
+      - paragraph [ref=e2688]: The essentials on running PatchUp with your class, from student access to what is included.
+    - generic [ref=e2689]:
+      - generic [ref=e2690]:
+        - heading "What is PatchUp?" [level=3] [ref=e2692]:
+          - button "What is PatchUp?" [ref=e2693] [cursor=pointer]:
+            - text: What is PatchUp?
+            - img
+        - heading "Who is PatchUp built for?" [level=3] [ref=e2695]:
+          - button "Who is PatchUp built for?" [ref=e2696] [cursor=pointer]:
+            - text: Who is PatchUp built for?
+            - img
+        - heading "Do students need accounts?" [level=3] [ref=e2698]:
+          - button "Do students need accounts?" [ref=e2699] [cursor=pointer]:
+            - text: Do students need accounts?
+            - img
+        - heading "What can I run with my class?" [level=3] [ref=e2701]:
+          - button "What can I run with my class?" [ref=e2702] [cursor=pointer]:
+            - text: What can I run with my class?
+            - img
+        - heading "Is PatchUp mostly about data?" [level=3] [ref=e2704]:
+          - button "Is PatchUp mostly about data?" [ref=e2705] [cursor=pointer]:
+            - text: Is PatchUp mostly about data?
+            - img
+        - heading "How fast can I get started?" [level=3] [ref=e2707]:
+          - button "How fast can I get started?" [ref=e2708] [cursor=pointer]:
+            - text: How fast can I get started?
+            - img
+      - paragraph [ref=e2709]:
+        - text: Need to bring PatchUp to a school team?
+        - link "Book a quick demo" [ref=e2710] [cursor=pointer]:
+          - /url: "#"
+  - contentinfo [ref=e2711]:
+    - generic [ref=e2713]:
+      - generic [ref=e2714]: © 2026 PatchUp. All rights reserved
+      - generic [ref=e2715]:
+        - link "How it works" [ref=e2716] [cursor=pointer]:
+          - /url: "#"
+        - link "Lessons & Activities" [ref=e2717] [cursor=pointer]:
+          - /url: "#"
+        - link "For Teachers" [ref=e2718] [cursor=pointer]:
+          - /url: "#"
+        - link "Privacy" [ref=e2719] [cursor=pointer]:
+          - /url: "#"
+        - link "About" [ref=e2720] [cursor=pointer]:
+          - /url: "#"

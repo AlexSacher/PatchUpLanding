@@ -1,0 +1,25 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - heading "Ship with confidence using our unified platform" [level=2] [ref=e7]
+        - paragraph [ref=e8]: Streamline your workflow with tools designed to enhance productivity at every step.
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - button "AI Models" [ref=e12] [cursor=pointer]:
+            - generic [ref=e14]: AI Models
+          - button "Global Reach" [ref=e15] [cursor=pointer]:
+            - generic [ref=e17]: Global Reach
+          - button "Smart Agent" [ref=e18] [cursor=pointer]:
+            - generic [ref=e20]: Smart Agent
+        - button "Learn more" [ref=e22] [cursor=pointer]:
+          - link "Learn more" [ref=e23]:
+            - /url: "#"
+      - generic [ref=e29]:
+        - img "feature background image" [ref=e31]
+        - img "feature background image" [ref=e32]
+      - generic [ref=e33]:
+        - heading "Unified AI Model Access" [level=3] [ref=e34]
+        - paragraph [ref=e35]: Switch between ChatGPT, Claude, and Gemini from a unified interface with seamless provider switching and consistent API responses.
+  - region "Notifications alt+T"
+  - alert [ref=e36]

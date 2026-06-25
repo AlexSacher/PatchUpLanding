@@ -1,0 +1,73 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - img "PatchUp Logo"
+  - generic [ref=e7]:
+    - heading "Supporting students Empowering educators" [level=1] [ref=e8]:
+      - text: Supporting students
+      - text: Empowering educators
+    - paragraph [ref=e9]: Bridge the gap between classroom disruption and student support — transform behavioral intervention with data-driven insights.
+    - button "Get in Touch →" [ref=e10] [cursor=pointer]
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]: What We Offer
+      - heading "Everything your school needs" [level=4] [ref=e14]
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]: 🎯
+        - heading "Regulation Activities" [level=6] [ref=e18]
+        - paragraph [ref=e19]: Tailored regulating activities that deliver consistent and reliable support for every student.
+      - generic [ref=e20]:
+        - generic [ref=e21]: 📋
+        - heading "Administrative Support" [level=6] [ref=e22]
+        - paragraph [ref=e23]: Streamlines reports, action plans, and data sharing to meaningfully ease administrator workload.
+      - generic [ref=e24]:
+        - generic [ref=e25]: 📊
+        - heading "Data-Driven Insights" [level=6] [ref=e26]
+        - paragraph [ref=e27]: Actionable insights at every level — student, classroom, or school-wide.
+  - generic [ref=e30]:
+    - generic [ref=e31]:
+      - generic [ref=e32]: For Students
+      - heading "Putting students first" [level=3] [ref=e33]
+    - generic [ref=e34]:
+      - heading "Tailored Activities" [level=6] [ref=e35]
+      - paragraph [ref=e36]: Students can select from a variety of tailored regulation activities that meet their unique needs and preferences.
+    - generic [ref=e37]:
+      - heading "Consistent, Flexible Support" [level=6] [ref=e38]
+      - paragraph [ref=e39]: PatchUp provides a consistent and reliable experience, regardless of available personnel.
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - generic [ref=e44]: For Administrators
+      - heading "Smarter administration" [level=3] [ref=e45]
+    - generic [ref=e46]:
+      - heading "Improved Reporting" [level=6] [ref=e47]
+      - paragraph [ref=e48]: Bolster reporting without adding to administrators' workloads.
+    - generic [ref=e49]:
+      - heading "Track Student Progress" [level=6] [ref=e50]
+      - paragraph [ref=e51]: Quickly access past interactions to spot patterns, monitor progress, and inform support strategies over time.
+  - generic [ref=e54]:
+    - generic [ref=e55]:
+      - generic [ref=e56]: For Divisions
+      - heading "District-wide visibility" [level=3] [ref=e57]
+    - generic [ref=e58]:
+      - heading "New Data & Insights" [level=6] [ref=e59]
+      - paragraph [ref=e60]: Capture day-to-day patterns at all levels and yield insights from new, meaningful data.
+    - generic [ref=e61]:
+      - heading "Identify Systemic Needs" [level=6] [ref=e62]
+      - paragraph [ref=e63]: Leverage trends across schools to proactively identify issues, allocate resources, and shape policy.
+  - generic [ref=e65]:
+    - generic [ref=e66]:
+      - generic [ref=e67]: Contact
+      - heading "Get in Touch" [level=4] [ref=e68]
+      - paragraph [ref=e69]: Ready to transform behavioral support at your school? Reach out.
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - generic [ref=e72]: Name
+        - textbox "Name" [ref=e73]
+      - generic [ref=e74]:
+        - generic [ref=e75]: Email
+        - textbox "Email" [ref=e76]
+      - generic [ref=e77]:
+        - generic [ref=e78]: Message
+        - textbox "Message" [ref=e79]
+      - button "Send Message" [ref=e80] [cursor=pointer]
+  - contentinfo [ref=e81]: © 2025 PatchUp. All rights reserved.
