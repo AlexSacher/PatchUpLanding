@@ -41,7 +41,8 @@ export default function HeroSection() {
                                 <Highlighter
                                     action="underline"
                                     color="#00A2E8"
-                                    strokeWidth={3}>
+                                    strokeWidth={3}
+                                    delay={700}>
                                     connected
                                 </Highlighter>
                             </motion.h1>
@@ -49,7 +50,7 @@ export default function HeroSection() {
                             <motion.p
                                 initial={{ opacity: 0, filter: 'blur(12px)', y: 12 }}
                                 animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
-                                transition={{ type: 'spring', bounce: 0.3, duration: 1.5, delay: 0.5 }}
+                                transition={{ type: 'spring', bounce: 0.3, duration: 1.5 }}
                                 className="text-muted-foreground mx-auto mt-6 max-w-xl text-pretty text-lg lg:mx-0">
                                 PatchUp gives K–12 teachers ready-to-run lessons, activities, and check-ins for
                                 social-emotional learning and intercultural communication building the skills kids
@@ -61,7 +62,7 @@ export default function HeroSection() {
                             <motion.div
                                 initial={{ opacity: 0, filter: 'blur(12px)', y: 12 }}
                                 animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
-                                transition={{ type: 'spring', bounce: 0.3, duration: 1.5, delay: 0.9 }}
+                                transition={{ type: 'spring', bounce: 0.3, duration: 1.5 }}
                                 className="mt-8">
                                 <ShinyButton
                                     href="https://patchup.ca"
@@ -76,7 +77,7 @@ export default function HeroSection() {
                         <motion.div
                             initial={{ opacity: 0, filter: 'blur(12px)', y: 16 }}
                             animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
-                            transition={{ type: 'spring', bounce: 0.3, duration: 1.5, delay: 0.4 }}
+                            transition={{ type: 'spring', bounce: 0.3, duration: 1.5 }}
                             className="relative">
                             <div className="rounded-[2rem] bg-neutral-900 p-3 shadow-2xl shadow-sky-900/15 ring-1 ring-black/5">
                                 <div className="bg-muted aspect-[4/3] overflow-hidden rounded-[1.25rem]">
