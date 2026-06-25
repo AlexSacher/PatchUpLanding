@@ -1,0 +1,47 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: Enterprise
+        - heading "Ready to scale your business?" [level=1] [ref=e9]
+        - paragraph [ref=e10]: Get in touch with our enterprise team to discuss custom solutions for your organization.
+        - list [ref=e11]:
+          - listitem [ref=e12]:
+            - img [ref=e13]
+            - generic [ref=e16]: 24/7 support availability
+          - listitem [ref=e17]:
+            - img [ref=e18]
+            - generic [ref=e21]: Dedicated account manager
+          - listitem [ref=e22]:
+            - img [ref=e23]
+            - generic [ref=e26]: Custom integrations
+          - listitem [ref=e27]:
+            - img [ref=e28]
+            - generic [ref=e31]: Priority response time
+        - generic [ref=e32]:
+          - text: Looking for general support?
+          - link "Visit our help center" [ref=e33] [cursor=pointer]:
+            - /url: "#support"
+      - generic [ref=e34]:
+        - heading "Talk to our team" [level=2] [ref=e35]
+        - paragraph [ref=e36]: Fill out the form and we'll be in touch within 24 hours.
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - textbox "First name" [ref=e39]
+            - textbox "Last name" [ref=e40]
+          - textbox "Work email" [ref=e41]
+          - textbox "Company name" [ref=e42]
+          - textbox "Phone number" [ref=e43]
+          - button "Request a demo" [ref=e44] [cursor=pointer]:
+            - text: Request a demo
+            - img
+        - paragraph [ref=e45]:
+          - text: By submitting, you agree to our
+          - link "Terms" [ref=e46] [cursor=pointer]:
+            - /url: "#"
+          - text: and
+          - link "Privacy Policy" [ref=e47] [cursor=pointer]:
+            - /url: "#"
+          - text: .
+  - region "Notifications alt+T"
+  - alert [ref=e48]

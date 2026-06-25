@@ -1,0 +1,54 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]:
+            - img [ref=e10]
+            - heading "Advanced Data Visualization" [level=3] [ref=e14]
+            - paragraph [ref=e15]: Transform complex data into clear, actionable insights with our powerful visualization tools.
+          - generic [ref=e17]:
+            - generic [ref=e18]:
+              - img [ref=e21]
+              - img [ref=e24]
+              - img [ref=e27]
+            - img [ref=e29]
+        - generic [ref=e2302]:
+          - generic [ref=e2303]:
+            - generic [ref=e2305]:
+              - generic [ref=e2307]: PDF
+              - generic [ref=e2333]: DOC
+              - generic [ref=e2359]: TXT
+            - generic [ref=e2384]:
+              - heading "Supported Files" [level=3] [ref=e2385]
+              - paragraph [ref=e2386]: Import and export multiple file formats
+          - generic [ref=e2387]:
+            - img [ref=e2393]
+            - generic [ref=e2397]:
+              - heading "Biometric Access" [level=3] [ref=e2398]
+              - paragraph [ref=e2399]: Secure entry with fingerprint recognition
+      - generic [ref=e2400]:
+        - generic [ref=e2401]:
+          - img [ref=e2402]
+          - heading "Memory Optimization" [level=3] [ref=e2404]
+          - paragraph [ref=e2405]: Monitor and optimize your system's memory usage.
+        - generic [ref=e2407]:
+          - generic [ref=e2408]: Memory Usage
+          - generic [ref=e2409]:
+            - generic [ref=e2410]: 56 GB / 128 GB
+            - generic [ref=e2411]: 45%
+      - generic [ref=e2413]:
+        - generic [ref=e2414]:
+          - img [ref=e2415]
+          - heading "Uptime Monitoring" [level=3] [ref=e2417]
+          - paragraph [ref=e2418]: Track your service reliability with real-time uptime metrics.
+        - generic [ref=e2424]:
+          - img [ref=e2425]
+          - generic [ref=e2428]: Enter instruction
+          - generic [ref=e2429]:
+            - generic [ref=e2430] [cursor=pointer]:
+              - img [ref=e2431]
+              - generic [ref=e2434]: Professional
+            - img [ref=e2436]
+  - region "Notifications alt+T"
+  - alert [ref=e2453]

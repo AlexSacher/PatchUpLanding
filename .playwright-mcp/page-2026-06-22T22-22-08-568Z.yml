@@ -1,0 +1,140 @@
+- generic [ref=e2]:
+  - banner:
+    - navigation [ref=e3]:
+      - generic [ref=e5]:
+        - link "home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "PatchUp" [ref=e8]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "How it works" [ref=e12] [cursor=pointer]:
+              - /url: "#link"
+          - listitem [ref=e13]:
+            - link "Lessons & Activities" [ref=e14] [cursor=pointer]:
+              - /url: "#link"
+          - listitem [ref=e15]:
+            - link "For Teachers" [ref=e16] [cursor=pointer]:
+              - /url: "#link"
+          - listitem [ref=e17]:
+            - link "About" [ref=e18] [cursor=pointer]:
+              - /url: "#link"
+        - generic [ref=e20]:
+          - button "Sign in" [ref=e21] [cursor=pointer]:
+            - generic [ref=e22]: Sign in
+          - button "Get started free" [ref=e23] [cursor=pointer]:
+            - generic [ref=e24]: Get started free
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - heading "Helping kids feel calm, kind, and connected" [level=1] [ref=e29]:
+          - generic [ref=e30]: Helping kids feel calm, kind, and connected
+          - generic [ref=e31]: Helping
+          - generic [ref=e33]: kids
+          - generic [ref=e35]: feel
+          - generic [ref=e37]: calm,
+          - generic [ref=e39]: kind,
+          - generic [ref=e41]: and
+          - generic [ref=e43]: connected
+        - paragraph [ref=e44]: "PatchUp gives K–12 teachers ready-to-run lessons, activities, and check-ins for social-emotional learning and belonging — the kind students actually look forward to. No prep, no accounts: just share a code and go."
+        - paragraph [ref=e45]: Build a classroom where every student belongs.
+        - generic [ref=e46]:
+          - button "Get started free" [ref=e47] [cursor=pointer]:
+            - generic [ref=e48]: Get started free
+          - paragraph [ref=e49]: Free for teachers · No student accounts
+      - generic [ref=e50]:
+        - img
+  - generic [ref=e56]:
+    - heading "Everything you need for SEL and belonging, ready for Monday morning" [level=2] [ref=e57]
+    - generic [ref=e58]:
+      - generic [ref=e63]:
+        - paragraph [ref=e64]: Check It!
+        - generic [ref=e65]:
+          - paragraph [ref=e66]: Why does drawing help when you're upset?
+          - img [ref=e67]
+        - generic [ref=e71]:
+          - button "It makes the problem disappear forever" [ref=e72]:
+            - generic [ref=e73]: It makes the problem disappear forever
+            - img [ref=e74]
+          - button "It gives your body and feelings somewhere to go so you can calm down" [ref=e78]:
+            - generic [ref=e79]: It gives your body and feelings somewhere to go so you can calm down
+            - img [ref=e80]
+          - button "It only works if you draw a really good picture" [ref=e84]:
+            - generic [ref=e85]: It only works if you draw a really good picture
+            - img [ref=e86]
+          - button "It makes other people feel better too" [ref=e90]:
+            - generic [ref=e91]: It makes other people feel better too
+            - img [ref=e92]
+      - generic [ref=e96]:
+        - generic [ref=e98]:
+          - heading "Lessons" [level=3] [ref=e99]
+          - paragraph [ref=e100]: Structured, ready-to-teach lessons on emotions, empathy, and communicating across cultures — no prep required.
+        - generic [ref=e102]:
+          - heading "Activities" [level=3] [ref=e103]
+          - paragraph [ref=e104]: Short, playful exercises students actually want to do — perfect for transitions, mornings, or a quick reset.
+        - generic [ref=e106]:
+          - heading "Check-ins" [level=3] [ref=e107]
+          - paragraph [ref=e108]: Quick "how are you feeling?" moments that help the whole class feel seen — in seconds.
+  - generic [ref=e116]:
+    - paragraph [ref=e118]:
+      - img [ref=e119]
+      - text: Social-emotional learning
+    - heading "Skills for understanding themselves and others" [level=2] [ref=e123]:
+      - text: Skills for understanding
+      - text: themselves and others
+    - paragraph [ref=e125]: Lessons, activities, and check-ins that help students name what they feel, build empathy, and learn to manage big emotions — woven into your day, not added on top.
+    - button "Get started free" [ref=e127] [cursor=pointer]:
+      - generic [ref=e128]: Get started free
+  - generic [ref=e136]:
+    - paragraph [ref=e138]:
+      - img [ref=e139]
+      - text: Intercultural communication
+    - heading "A classroom where everyone belongs" [level=2] [ref=e143]:
+      - text: A classroom where
+      - text: everyone belongs
+    - paragraph [ref=e145]: Activities and lessons that help students from every background understand each other, communicate across differences, and feel they truly belong.
+    - button "Get started free" [ref=e147] [cursor=pointer]:
+      - generic [ref=e148]: Get started free
+  - generic [ref=e151]:
+    - generic [ref=e152]:
+      - heading "How one class answered \"How are you feeling?\" — before and after a few weeks of check-ins" [level=3] [ref=e153]
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - button "Before" [ref=e156]:
+            - generic [ref=e158]: Before
+          - button "After" [ref=e159]:
+            - generic [ref=e161]: After
+        - button "Replay" [ref=e162]:
+          - img [ref=e163]
+          - text: Replay
+      - generic [ref=e166]:
+        - generic [ref=e168]: Share of responses
+        - generic [ref=e169]:
+          - generic [ref=e172]:
+            - generic [ref=e174]: 10%
+            - generic [ref=e177]: 20%
+            - generic [ref=e180]: 30%
+            - generic [ref=e183]: 40%
+            - generic [ref=e186]: 50%
+          - generic [ref=e203]:
+            - generic [ref=e204]: Calm
+            - generic [ref=e205]: Okay
+            - generic [ref=e206]: Frustrated
+            - generic [ref=e207]: Overwhelmed
+    - generic [ref=e208]:
+      - heading "Watch more students show up ready to learn" [level=2] [ref=e210]
+      - paragraph [ref=e212]: A few minutes of SEL a day adds up. As students get the language to name what they feel and simple tools to reset, the whole room starts to settle.
+      - paragraph [ref=e214]: In this class, students answering Calm or Okay grew from 47% to 80% — and you can feel the difference the moment you walk in.
+  - contentinfo [ref=e215]:
+    - generic [ref=e217]:
+      - generic [ref=e218]: © 2026 PatchUp. All rights reserved
+      - generic [ref=e219]:
+        - link "How it works" [ref=e220] [cursor=pointer]:
+          - /url: "#"
+        - link "Lessons & Activities" [ref=e221] [cursor=pointer]:
+          - /url: "#"
+        - link "For Teachers" [ref=e222] [cursor=pointer]:
+          - /url: "#"
+        - link "Privacy" [ref=e223] [cursor=pointer]:
+          - /url: "#"
+        - link "About" [ref=e224] [cursor=pointer]:
+          - /url: "#"

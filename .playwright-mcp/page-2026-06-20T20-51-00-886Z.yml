@@ -1,0 +1,296 @@
+- generic [ref=e2]:
+  - banner:
+    - navigation [ref=e3]:
+      - generic [ref=e5]:
+        - link "home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img [ref=e8]
+        - list [ref=e12]:
+          - listitem [ref=e13]:
+            - link "Features" [ref=e14] [cursor=pointer]:
+              - /url: "#link"
+          - listitem [ref=e15]:
+            - link "Solution" [ref=e16] [cursor=pointer]:
+              - /url: "#link"
+          - listitem [ref=e17]:
+            - link "Pricing" [ref=e18] [cursor=pointer]:
+              - /url: "#link"
+          - listitem [ref=e19]:
+            - link "About" [ref=e20] [cursor=pointer]:
+              - /url: "#link"
+        - generic [ref=e22]:
+          - button "Login" [ref=e23] [cursor=pointer]:
+            - generic [ref=e24]: Login
+          - button "Sign Up" [ref=e25] [cursor=pointer]:
+            - generic [ref=e26]: Sign Up
+  - main [ref=e27]:
+    - generic [ref=e33]:
+      - generic [ref=e37]:
+        - link "Introducing Support for AI Models" [ref=e40] [cursor=pointer]:
+          - /url: "#link"
+          - generic [ref=e41]: Introducing Support for AI Models
+          - generic [ref=e44]:
+            - img [ref=e46]
+            - img [ref=e49]
+        - heading "Modern Solutions for Customer Engagement" [level=1] [ref=e51]:
+          - generic [ref=e52]: Modern Solutions for Customer Engagement
+          - generic [ref=e53]: Modern
+          - generic [ref=e55]: Solutions
+          - generic [ref=e57]: for
+          - generic [ref=e59]: Customer
+          - generic [ref=e61]: Engagement
+        - paragraph [ref=e62]:
+          - generic [ref=e63]: Highly customizable components for building modern websites and applications that look and feel the way you mean it.
+        - generic [ref=e64]:
+          - link "Start Building" [ref=e67] [cursor=pointer]:
+            - /url: "#link"
+            - generic [ref=e68]: Start Building
+          - link "Request a demo" [ref=e70] [cursor=pointer]:
+            - /url: "#link"
+            - generic [ref=e71]: Request a demo
+      - generic [ref=e72]:
+        - img "app screen" [ref=e76]
+        - generic [ref=e78]:
+          - paragraph [ref=e79]: "Trusted by teams at :"
+          - generic [ref=e80]:
+            - img "Spotify" [ref=e81]:
+              - generic [ref=e83]: Spotify
+            - img "Vercel" [ref=e84]:
+              - generic [ref=e86]: Vercel
+            - img "Supabase" [ref=e87]:
+              - generic [ref=e89]: Supabase
+            - img "Hulu" [ref=e90]:
+              - generic [ref=e91]: hulu
+  - generic [ref=e94]:
+    - heading "Empowering Marketing teams with AI-driven solutions" [level=2] [ref=e95]
+    - generic [ref=e96]:
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - img [ref=e101]
+          - paragraph [ref=e104]: How can I optimize my neural network to reduce inference time while maintaining accuracy?
+          - list [ref=e105]:
+            - listitem [ref=e106]:
+              - generic [ref=e107]: ⭐️
+              - generic [ref=e108]: 90+
+              - text: Integrations
+            - listitem [ref=e109]:
+              - generic [ref=e110]: 👨🏽‍💻
+              - generic [ref=e111]: 56%
+              - text: Productivity Boost
+            - listitem [ref=e112]:
+              - generic [ref=e113]: 🦜
+              - generic [ref=e114]: 24/7
+              - text: Customer Support
+        - generic [ref=e115]:
+          - generic [ref=e116]: Ask AI Assistant
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - button [ref=e119]:
+                - img
+              - button [ref=e120]:
+                - img
+            - button [ref=e121]:
+              - img
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - heading "Generate Ideas" [level=3] [ref=e124]
+          - paragraph [ref=e125]: Spark creativity with AI-powered content suggestions and inspiration.
+        - generic [ref=e126]:
+          - heading "Improve Writing" [level=3] [ref=e127]
+          - paragraph [ref=e128]: Enhance your text with smart editing suggestions and style refinements.
+        - generic [ref=e129]:
+          - heading "Design Layouts" [level=3] [ref=e130]
+          - paragraph [ref=e131]: Create visually appealing layouts that capture your audience's attention.
+  - generic [ref=e134]:
+    - generic [ref=e135]:
+      - img [ref=e136]
+      - heading "Advanced Data Visualization" [level=3] [ref=e138]
+      - paragraph [ref=e139]: Transform complex data into clear, actionable insights with our powerful visualization tools.
+      - generic [ref=e140]:
+        - img "world map" [ref=e141]
+        - img "user" [ref=e143]
+        - img "user" [ref=e145]
+        - img "user" [ref=e147]
+    - generic [ref=e148]:
+      - generic [ref=e154]: PDF
+      - generic [ref=e155]:
+        - heading "Supported Files" [level=3] [ref=e156]
+        - paragraph [ref=e157]: Import and export multiple file formats
+    - generic [ref=e158]:
+      - img [ref=e166]
+      - generic [ref=e175]:
+        - heading "Biometric Access" [level=3] [ref=e176]
+        - paragraph [ref=e177]: Secure entry with fingerprint recognition
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - img [ref=e180]
+        - heading "Memory Optimization" [level=3] [ref=e182]
+        - paragraph [ref=e183]: Monitor and optimize your system's memory usage.
+      - generic [ref=e184]:
+        - paragraph [ref=e185]: Memory Usage
+        - generic [ref=e186]:
+          - generic [ref=e187]: 56 GB / 128 GB
+          - generic [ref=e188]: 45%
+    - generic [ref=e191]:
+      - generic [ref=e192]:
+        - img [ref=e193]
+        - heading "Uptime Monitoring" [level=3] [ref=e195]
+        - paragraph [ref=e196]: Track your service reliability with real-time uptime metrics.
+      - generic [ref=e197]:
+        - paragraph [ref=e200]: Enter instruction
+        - generic [ref=e201]:
+          - generic [ref=e202]: Professional
+          - button [ref=e203]:
+            - img [ref=e204]
+  - generic [ref=e208]:
+    - heading "Empowering developers with AI-driven solutions" [level=2] [ref=e210]
+    - generic [ref=e211]:
+      - generic [ref=e212]:
+        - generic [ref=e214]:
+          - generic [ref=e215]: AI Strategy Meeting
+          - generic [ref=e217]: 2:30 - 3:45 PM
+          - generic [ref=e219]:
+            - img [ref=e221]
+            - img [ref=e223]
+            - img [ref=e225]
+            - img [ref=e227]
+          - generic [ref=e228]: ML Pipeline Discussion
+        - generic [ref=e229]:
+          - heading "AI Code Generation" [level=3] [ref=e230]
+          - paragraph [ref=e231]: Our advanced AI models transform natural language into production-ready code.
+      - generic [ref=e232]:
+        - generic [ref=e234]:
+          - generic [ref=e236]:
+            - img [ref=e238]
+            - generic [ref=e239]:
+              - generic [ref=e240]: Méschac Irung
+              - generic [ref=e241]: 2m
+          - img [ref=e249]
+        - generic [ref=e251]:
+          - heading "Intelligent Code Review" [level=3] [ref=e252]
+          - paragraph [ref=e253]: Our AI analyzes your code for bugs, security issues, and optimization opportunities.
+      - generic [ref=e254]:
+        - generic [ref=e257]:
+          - generic [ref=e258]:
+            - img [ref=e259]
+            - paragraph [ref=e262]: How can I optimize my neural network to reduce inference time while maintaining accuracy?
+          - generic [ref=e263]:
+            - generic [ref=e264]: Ask AI Assistant
+            - generic [ref=e265]:
+              - generic [ref=e266]:
+                - button [ref=e267]:
+                  - img
+                - button [ref=e268]:
+                  - img
+              - button [ref=e269]:
+                - img
+        - generic [ref=e270]:
+          - heading "Contextual AI Assistant" [level=3] [ref=e271]
+          - paragraph [ref=e272]: A personalized AI companion that understands your codebase and helps solve complex...
+  - generic [ref=e274]:
+    - generic [ref=e275]:
+      - heading "Ship with confidence using our unified platform" [level=2] [ref=e276]:
+        - text: Ship with confidence
+        - text: using our unified platform
+      - paragraph [ref=e277]: Streamline your workflow with tools designed to enhance productivity at every step.
+    - generic [ref=e278]:
+      - generic [ref=e279]:
+        - button "AI Models" [ref=e280]
+        - button "Global Reach" [ref=e281]
+        - button "Smart Agent" [ref=e282]
+      - link "Learn more" [ref=e283] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e284]:
+      - img "app screen" [ref=e287]
+      - img "app screen" [ref=e289]
+    - generic [ref=e290]:
+      - heading "Unified AI Model Access" [level=3] [ref=e291]
+      - paragraph [ref=e292]: Switch between ChatGPT, Claude, and Gemini from a unified interface with seamless provider switching and consistent API responses.
+  - generic [ref=e295]:
+    - generic [ref=e296]:
+      - generic [ref=e297]:
+        - heading "The AI Coding Assistant that helps you write code faster" [level=2] [ref=e298]
+        - button "Learn more" [ref=e299] [cursor=pointer]:
+          - text: Learn more
+          - img
+      - generic [ref=e300]:
+        - generic [ref=e301]:
+          - generic [ref=e302]:
+            - img [ref=e303]
+            - heading "Code Generation" [level=3] [ref=e307]
+          - paragraph [ref=e308]: Just describe the code you want to write and we'll generate it for you. From boilerplate code to complex business logic, we've got you covered.
+        - generic [ref=e309]:
+          - generic [ref=e310]:
+            - img [ref=e311]
+            - heading "Code Review" [level=3] [ref=e314]
+          - paragraph [ref=e315]: Get instant feedback on your code. Our AI will review your code and suggest improvements in terms of best practices and performance.
+    - img "app screen" [ref=e318]
+  - generic [ref=e321]:
+    - heading "Start Building" [level=2] [ref=e322]
+    - paragraph [ref=e323]: Libero sapiente aliquam quibusdam aspernatur.
+    - generic [ref=e325]:
+      - img
+      - textbox "Your mail address" [ref=e326]
+      - button "submit" [ref=e328]:
+        - generic [ref=e329]: Get Started
+  - generic [ref=e332]:
+    - generic [ref=e333]:
+      - paragraph [ref=e334]: Enterprise
+      - heading "Ready to scale your business?" [level=2] [ref=e335]:
+        - text: Ready to scale
+        - text: your business?
+      - paragraph [ref=e336]: Get in touch with our enterprise team to discuss custom solutions for your organization.
+      - list [ref=e337]:
+        - listitem [ref=e338]:
+          - img [ref=e339]
+          - text: 24/7 support availability
+        - listitem [ref=e342]:
+          - img [ref=e343]
+          - text: Dedicated account manager
+        - listitem [ref=e346]:
+          - img [ref=e347]
+          - text: Custom integrations
+        - listitem [ref=e350]:
+          - img [ref=e351]
+          - text: Priority response time
+      - paragraph [ref=e354]:
+        - text: Looking for general support?
+        - link "Visit our help center" [ref=e355] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e356]:
+      - heading "Talk to our team" [level=3] [ref=e357]
+      - paragraph [ref=e358]: Fill out the form and we'll be in touch within 24 hours.
+      - generic [ref=e359]:
+        - generic [ref=e360]:
+          - textbox "First name" [ref=e361]
+          - textbox "Last name" [ref=e362]
+        - textbox "Work email" [ref=e363]
+        - textbox "Company name" [ref=e364]
+        - textbox "Phone number" [ref=e365]
+        - button "Request a demo" [ref=e366]:
+          - text: Request a demo
+          - img [ref=e367]
+      - paragraph [ref=e369]:
+        - text: By submitting, you agree to our
+        - link "Terms" [ref=e370] [cursor=pointer]:
+          - /url: "#"
+        - text: and
+        - link "Privacy Policy" [ref=e371] [cursor=pointer]:
+          - /url: "#"
+        - text: .
+  - contentinfo [ref=e372]:
+    - generic [ref=e374]:
+      - generic [ref=e375]: © 2026 Tailark, All rights reserved
+      - generic [ref=e376]:
+        - link "Features" [ref=e377] [cursor=pointer]:
+          - /url: "#"
+        - link "Solution" [ref=e378] [cursor=pointer]:
+          - /url: "#"
+        - link "Customers" [ref=e379] [cursor=pointer]:
+          - /url: "#"
+        - link "Pricing" [ref=e380] [cursor=pointer]:
+          - /url: "#"
+        - link "Help" [ref=e381] [cursor=pointer]:
+          - /url: "#"
+        - link "About" [ref=e382] [cursor=pointer]:
+          - /url: "#"

@@ -1,0 +1,193 @@
+- generic [ref=e2]:
+  - banner:
+    - navigation [ref=e3]:
+      - generic [ref=e5]:
+        - link "home" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "PatchUp" [ref=e8]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "How it works" [ref=e12] [cursor=pointer]:
+              - /url: "#link"
+          - listitem [ref=e13]:
+            - link "Lessons & Activities" [ref=e14] [cursor=pointer]:
+              - /url: "#link"
+          - listitem [ref=e15]:
+            - link "For Teachers" [ref=e16] [cursor=pointer]:
+              - /url: "#link"
+          - listitem [ref=e17]:
+            - link "About" [ref=e18] [cursor=pointer]:
+              - /url: "#link"
+        - generic [ref=e20]:
+          - button "Sign in" [ref=e21] [cursor=pointer]:
+            - generic [ref=e22]: Sign in
+          - button "Get started free" [ref=e23] [cursor=pointer]:
+            - generic [ref=e24]: Get started free
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - heading "Helping kids feel calm, kind, and connected" [level=1] [ref=e29]:
+          - generic [ref=e30]: Helping kids feel calm, kind, and connected
+          - generic [ref=e31]: Helping
+          - generic [ref=e33]: kids
+          - generic [ref=e35]: feel
+          - generic [ref=e37]: calm,
+          - generic [ref=e39]: kind,
+          - generic [ref=e41]: and
+          - generic [ref=e43]: connected
+        - paragraph [ref=e44]: "PatchUp gives K–12 teachers ready-to-run lessons, activities, and check-ins for social-emotional learning and belonging — the kind students actually look forward to. No prep, no accounts: just share a code and go."
+        - button "Get started free" [ref=e46] [cursor=pointer]:
+          - generic [ref=e47]: Get started free
+      - generic [ref=e48]:
+        - img
+  - generic [ref=e54]:
+    - img
+    - generic [ref=e60]:
+      - paragraph [ref=e62]:
+        - img [ref=e63]
+        - text: Social-emotional learning
+      - heading "Skills for understanding themselves and others" [level=2] [ref=e67]:
+        - text: Skills for understanding
+        - text: themselves and others
+      - paragraph [ref=e69]: Lessons, activities, and check-ins that help students name what they feel, build empathy, and learn to manage big emotions — woven into your day, not added on top.
+      - button "Get started free" [ref=e71] [cursor=pointer]:
+        - generic [ref=e72]: Get started free
+  - generic [ref=e75]:
+    - img
+    - generic [ref=e81]:
+      - paragraph [ref=e83]:
+        - img [ref=e84]
+        - text: Intercultural communication
+      - heading "A classroom where everyone belongs" [level=2] [ref=e88]:
+        - text: A classroom where
+        - text: everyone belongs
+      - paragraph [ref=e90]: Activities and lessons that help students from every background understand each other, communicate across differences, and feel they truly belong.
+      - button "Get started free" [ref=e92] [cursor=pointer]:
+        - generic [ref=e93]: Get started free
+  - generic [ref=e97]:
+    - paragraph [ref=e98]:
+      - img [ref=e99]
+      - text: Insights · an optional Classroom+ add-on
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - heading "How one class answered \"How are you feeling?\" — before and after a few weeks of check-ins" [level=3] [ref=e103]
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - button "Before" [ref=e106]:
+              - generic [ref=e108]: Before
+            - button "After" [ref=e109]:
+              - generic [ref=e111]: After
+          - button "Replay" [ref=e112]:
+            - img [ref=e113]
+            - text: Replay
+        - generic [ref=e116]:
+          - generic [ref=e118]: Share of responses
+          - generic [ref=e119]:
+            - generic [ref=e122]:
+              - generic [ref=e124]: 10%
+              - generic [ref=e127]: 20%
+              - generic [ref=e130]: 30%
+              - generic [ref=e133]: 40%
+              - generic [ref=e136]: 50%
+            - generic [ref=e153]:
+              - generic [ref=e154]: Calm
+              - generic [ref=e155]: Okay
+              - generic [ref=e156]: Frustrated
+              - generic [ref=e157]: Overwhelmed
+      - generic [ref=e158]:
+        - heading "Watch more students show up ready to learn" [level=2] [ref=e160]
+        - paragraph [ref=e162]: A few minutes of SEL a day adds up. As students get the language to name what they feel and simple tools to reset, the whole room starts to settle.
+        - paragraph [ref=e164]: In this class, students answering Calm or Okay grew from 47% to 80% — and you can feel the difference the moment you walk in.
+  - generic [ref=e166]:
+    - generic [ref=e167]:
+      - heading "Pricing that grows with your school" [level=2] [ref=e168]
+      - paragraph [ref=e169]: Classroom is free for teachers. Add Insights with Classroom+ whenever you want to see how students are doing over time.
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - button "Monthly" [ref=e172]
+          - button "Annually" [ref=e173]
+        - paragraph [ref=e174]: Save 25% on annual billing
+    - generic [ref=e175]:
+      - generic [ref=e177]:
+        - heading "Classroom" [level=3] [ref=e178]
+        - paragraph [ref=e179]: Everything a teacher needs to run SEL and belonging in one classroom.
+        - generic [ref=e180]: $0
+        - paragraph [ref=e181]: Free forever
+        - button "Get started free" [ref=e182] [cursor=pointer]:
+          - generic [ref=e183]: Get started free
+        - list [ref=e184]:
+          - listitem [ref=e185]:
+            - img [ref=e186]
+            - generic [ref=e188]: All SEL & belonging lessons, activities, and check-ins
+          - listitem [ref=e189]:
+            - img [ref=e190]
+            - generic [ref=e192]: Unlimited classes
+          - listitem [ref=e193]:
+            - img [ref=e194]
+            - generic [ref=e196]: Students join with a code — no accounts
+          - listitem [ref=e197]:
+            - img [ref=e198]
+            - generic [ref=e200]: In-the-moment class check-ins
+        - paragraph [ref=e201]: Insights & data available with Classroom+
+      - generic [ref=e203]:
+        - heading "Classroom+" [level=3] [ref=e204]
+        - paragraph [ref=e205]: Adds Insights — see how your students are doing over time.
+        - generic [ref=e206]: $6
+        - paragraph [ref=e207]: per teacher / month
+        - button "Book a demo" [ref=e208] [cursor=pointer]:
+          - generic [ref=e209]: Book a demo
+        - generic [ref=e210]:
+          - img [ref=e211]
+          - text: Includes Insights
+        - paragraph [ref=e213]: "Everything in Classroom, plus:"
+        - list [ref=e214]:
+          - listitem [ref=e215]:
+            - img [ref=e216]
+            - generic [ref=e218]: Trends over time — before vs. after
+          - listitem [ref=e219]:
+            - img [ref=e220]
+            - generic [ref=e222]: Class & student progress views
+          - listitem [ref=e223]:
+            - img [ref=e224]
+            - generic [ref=e226]: Export & share reports
+          - listitem [ref=e227]:
+            - img [ref=e228]
+            - generic [ref=e230]: Priority email & chat support
+      - generic [ref=e232]:
+        - heading "District" [level=3] [ref=e233]
+        - paragraph [ref=e234]: For districts and divisions supporting many schools.
+        - generic [ref=e235]: Custom
+        - paragraph [ref=e236]: Let's talk
+        - button "Contact us" [ref=e237] [cursor=pointer]:
+          - generic [ref=e238]: Contact us
+        - generic [ref=e239]:
+          - img [ref=e240]
+          - text: Includes Insights
+        - paragraph [ref=e242]: "Everything in Classroom+, plus:"
+        - list [ref=e243]:
+          - listitem [ref=e244]:
+            - img [ref=e245]
+            - generic [ref=e247]: District-wide onboarding & training
+          - listitem [ref=e248]:
+            - img [ref=e249]
+            - generic [ref=e251]: SSO & roster sync
+          - listitem [ref=e252]:
+            - img [ref=e253]
+            - generic [ref=e255]: Dedicated success manager
+          - listitem [ref=e256]:
+            - img [ref=e257]
+            - generic [ref=e259]: Custom agreements & invoicing
+  - contentinfo [ref=e260]:
+    - generic [ref=e262]:
+      - generic [ref=e263]: © 2026 PatchUp. All rights reserved
+      - generic [ref=e264]:
+        - link "How it works" [ref=e265] [cursor=pointer]:
+          - /url: "#"
+        - link "Lessons & Activities" [ref=e266] [cursor=pointer]:
+          - /url: "#"
+        - link "For Teachers" [ref=e267] [cursor=pointer]:
+          - /url: "#"
+        - link "Privacy" [ref=e268] [cursor=pointer]:
+          - /url: "#"
+        - link "About" [ref=e269] [cursor=pointer]:
+          - /url: "#"

@@ -1,0 +1,55 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e5]:
+      - heading "Powerful features for modern teams" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - img "bg c1" [ref=e11]
+            - generic [ref=e15]:
+              - generic [ref=e16]:
+                - generic [ref=e17]:
+                  - generic [ref=e18]: Gemini
+                  - generic [ref=e19]: 2x
+                - generic [ref=e20]:
+                  - generic [ref=e21]: Open AI
+                  - generic [ref=e22]: 5x
+                - generic [ref=e23]:
+                  - generic [ref=e24]: Deepseek
+                  - generic [ref=e25]: 3x
+                - generic [ref=e26]:
+                  - generic [ref=e27]: Mistral AI
+                  - generic [ref=e28]: 4x
+                - generic [ref=e29]:
+                  - generic [ref=e30]: Qwen
+                  - generic [ref=e31]: 6x
+              - generic [ref=e32]:
+                - generic [ref=e33]: Plan, Build anything...
+                - generic [ref=e34]:
+                  - generic [ref=e35]:
+                    - generic [ref=e36]:
+                      - img [ref=e37]
+                      - generic [ref=e39]: Agent
+                    - generic [ref=e40] [cursor=pointer]:
+                      - text: Claude Opus 4.5
+                      - img [ref=e41]
+                  - img [ref=e44]
+          - generic [ref=e47]:
+            - button "extend smart email composition feature" [expanded] [ref=e48] [cursor=pointer]
+            - heading "Smart email composition" [level=3] [ref=e49]
+            - paragraph [ref=e51]: With AI-powered suggestions, templates, and seamless collaboration.
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - img "bg c3" [ref=e54]
+            - generic [ref=e56]:
+              - generic [ref=e57]:
+                - img [ref=e60]
+                - img [ref=e63]
+                - img [ref=e66]
+              - img [ref=e68]
+          - generic [ref=e2341]:
+            - button "extend AI autocomplete feature" [ref=e2342] [cursor=pointer]
+            - heading "AI autocomplete" [level=3] [ref=e2343]
+            - paragraph [ref=e2345]: That learns your writing style and provides context-aware suggestions.
+  - region "Notifications alt+T"
+  - alert [ref=e2346]

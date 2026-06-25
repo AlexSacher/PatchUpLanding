@@ -1,0 +1,119 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - heading "Pricing that scale with your business" [level=2] [ref=e7]
+        - paragraph [ref=e8]: Choose the perfect plan for your needs and start optimizing your workflow today
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - button "Monthly" [ref=e11]
+            - button "Annually" [ref=e12]
+          - generic [ref=e13]: Save 25% On Annual Billing
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: Free
+            - generic [ref=e20]: For developers trying out Tailark for the first time
+          - generic [ref=e21]:
+            - generic [ref=e22]:
+              - generic [ref=e25]: $
+              - generic [ref=e30]: "0"
+            - generic [ref=e31]: Per month
+          - link "Get Started" [ref=e32] [cursor=pointer]:
+            - /url: "#"
+          - list [ref=e33]:
+            - listitem [ref=e34]:
+              - img [ref=e35]
+              - text: Basic Analytics Dashboard
+            - listitem [ref=e37]:
+              - img [ref=e38]
+              - text: 5GB Cloud Storage
+            - listitem [ref=e40]:
+              - img [ref=e41]
+              - text: Email and Chat Support
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: Pro
+            - generic [ref=e46]: Ideal for developers who need more features and support
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e51]: $
+              - generic [ref=e54]:
+                - generic [ref=e56]: "1"
+                - generic [ref=e58]: "4"
+            - generic [ref=e59]: Per month
+          - link "Get Started" [ref=e60] [cursor=pointer]:
+            - /url: "#"
+          - list [ref=e61]:
+            - listitem [ref=e62]: "Everything in Free Plan plus:"
+            - listitem [ref=e63]:
+              - img [ref=e64]
+              - text: 5GB Cloud Storage
+            - listitem [ref=e66]:
+              - img [ref=e67]
+              - text: Email and Chat Support
+            - listitem [ref=e69]:
+              - img [ref=e70]
+              - text: Access to Community Forum
+            - listitem [ref=e72]:
+              - img [ref=e73]
+              - text: Single User Access
+            - listitem [ref=e75]:
+              - img [ref=e76]
+              - text: Access to Basic Templates
+            - listitem [ref=e78]:
+              - img [ref=e79]
+              - text: Mobile App Access
+            - listitem [ref=e81]:
+              - img [ref=e82]
+              - text: 1 Custom Report Per Month
+            - listitem [ref=e84]:
+              - img [ref=e85]
+              - text: Monthly Product Updates
+            - listitem [ref=e87]:
+              - img [ref=e88]
+              - text: Standard Security Features
+        - generic [ref=e90]:
+          - generic [ref=e91]:
+            - generic [ref=e92]: Startup
+            - generic [ref=e93]: For startups that need more advanced features and support.
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e98]: $
+              - generic [ref=e101]:
+                - generic [ref=e103]: "3"
+                - generic [ref=e105]: "7"
+            - generic [ref=e106]: Per month
+          - link "Get Started" [ref=e107] [cursor=pointer]:
+            - /url: "#"
+          - list [ref=e108]:
+            - listitem [ref=e109]: "Everything in Pro Plan plus:"
+            - listitem [ref=e110]:
+              - img [ref=e111]
+              - text: 5GB Cloud Storage
+            - listitem [ref=e113]:
+              - img [ref=e114]
+              - text: Email and Chat Support
+            - listitem [ref=e116]:
+              - img [ref=e117]
+              - text: Multi-User Access
+            - listitem [ref=e119]:
+              - img [ref=e120]
+              - text: 1 Custom Report Per Month
+            - listitem [ref=e122]:
+              - img [ref=e123]
+              - text: Monthly Product Updates
+            - listitem [ref=e125]:
+              - img [ref=e126]
+              - text: Standard Security Features
+            - listitem [ref=e128]:
+              - img [ref=e129]
+              - text: Access to Advanced Templates
+            - listitem [ref=e131]:
+              - img [ref=e132]
+              - text: Access to Community Forum
+            - listitem [ref=e134]:
+              - img [ref=e135]
+              - text: Mobile App Access
+  - region "Notifications alt+T"
+  - alert [ref=e137]
