@@ -23,6 +23,7 @@ interface HighlighterProps {
   padding?: number
   multiline?: boolean
   isView?: boolean
+  delay?: number
 }
 
 export function Highlighter({
@@ -35,6 +36,7 @@ export function Highlighter({
   padding = 2,
   multiline = true,
   isView = false,
+  delay = 0,
 }: HighlighterProps) {
   const elementRef = useRef<HTMLSpanElement>(null)
 
@@ -50,6 +52,7 @@ export function Highlighter({
     const element = elementRef.current
     let annotation: RoughAnnotation | null = null
     let resizeObserver: ResizeObserver | null = null
+    let delayTimer: ReturnType<typeof setTimeout> | null = null
 
     if (shouldShow && element) {
       const annotationConfig = {
@@ -62,20 +65,31 @@ export function Highlighter({
         multiline,
       }
 
-      const currentAnnotation = annotate(element, annotationConfig)
-      annotation = currentAnnotation
-      currentAnnotation.show()
-
-      resizeObserver = new ResizeObserver(() => {
-        currentAnnotation.hide()
+      const start = () => {
+        const currentAnnotation = annotate(element, annotationConfig)
+        annotation = currentAnnotation
         currentAnnotation.show()
-      })
 
-      resizeObserver.observe(element)
-      resizeObserver.observe(document.body)
+        resizeObserver = new ResizeObserver(() => {
+          currentAnnotation.hide()
+          currentAnnotation.show()
+        })
+
+        resizeObserver.observe(element)
+        resizeObserver.observe(document.body)
+      }
+
+      if (delay > 0) {
+        delayTimer = setTimeout(start, delay)
+      } else {
+        start()
+      }
     }
 
     return () => {
+      if (delayTimer) {
+        clearTimeout(delayTimer)
+      }
       annotation?.remove()
       if (resizeObserver) {
         resizeObserver.disconnect()
@@ -90,6 +104,7 @@ export function Highlighter({
     iterations,
     padding,
     multiline,
+    delay,
   ])
 
   return (

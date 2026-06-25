@@ -1,19 +1,51 @@
 import { Link } from "react-router-dom"
+import { motion } from "motion/react"
 import HeroGeometric from "@/components/ui/hero-geometric"
 import { Button } from "@/components/ui/button"
+import { AnimatedGroup } from "@/components/motion-primitives/animated-group"
+
+const inViewTransition = {
+  item: {
+    hidden: { opacity: 0, filter: "blur(12px)", y: 12 },
+    visible: {
+      opacity: 1,
+      filter: "blur(0px)",
+      y: 0,
+      transition: { type: "spring" as const, bounce: 0.3, duration: 1.5 },
+    },
+  },
+}
+const viewport = { once: true, margin: "-80px" as const }
 
 export default function CallToAction() {
   return (
     <section className="px-4 pb-16 md:px-6 md:pb-24">
       <div className="mx-auto max-w-6xl">
-        <div className="relative isolate overflow-hidden rounded-[2.5rem] border border-sky-100 bg-sky-50 px-6 py-16 shadow-sm sm:px-10 md:py-20 lg:px-16">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.92, y: 32, filter: "blur(12px)" }}
+          whileInView={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
+          viewport={viewport}
+          transition={{ type: "spring", bounce: 0.3, duration: 1.1 }}
+          className="relative isolate overflow-hidden rounded-[2.5rem] border border-sky-100 bg-sky-50 px-6 py-16 shadow-sm sm:px-10 md:py-20 lg:px-16"
+        >
           <HeroGeometric
             className="absolute inset-0 -z-10 h-full min-h-0 w-full"
             color1="#00A2E8"
             color2="#F0F9FF"
             speed={0.45}
           />
-          <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center">
+          <AnimatedGroup
+            variants={{
+              container: {
+                visible: {
+                  transition: { staggerChildren: 0.12, delayChildren: 0.25 },
+                },
+              },
+              ...inViewTransition,
+            }}
+            viewport={viewport}
+            className="relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center"
+          >
             <span className="rounded-full bg-white/80 px-3 py-1 text-sm font-semibold text-sky-700 shadow-sm ring-1 ring-sky-100">
               Ready in minutes
             </span>
@@ -45,8 +77,8 @@ export default function CallToAction() {
                 <span>Book a demo</span>
               </Button>
             </div>
-          </div>
-        </div>
+          </AnimatedGroup>
+        </motion.div>
       </div>
     </section>
   )
