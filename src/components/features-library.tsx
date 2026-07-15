@@ -58,6 +58,7 @@ export default function FeaturesLibrary({
   body = "Lessons, activities, and check-ins that help students name what they feel, build empathy, and learn to manage big emotions, woven into your day, not added on top.",
   cta = "Get started free",
   video,
+  videoClassName,
 }: {
   id?: string
   direction?: "default" | "reverse"
@@ -68,6 +69,7 @@ export default function FeaturesLibrary({
   body?: string
   cta?: string
   video?: string
+  videoClassName?: string
 }) {
   const reverse = direction === "reverse"
   const t = themes[theme]
@@ -135,15 +137,19 @@ export default function FeaturesLibrary({
               className={cn(reverse && "lg:order-2")}
             >
               <div className="rounded-[2rem] bg-neutral-900 p-3 shadow-2xl ring-1 shadow-black/10 ring-black/5">
-                <div className="relative aspect-[4.3/3] overflow-hidden rounded-[1.25rem] bg-muted">
+                <div className="relative aspect-[4.3/3] overflow-hidden rounded-[1.25rem] bg-muted ">
                   {video ? (
                     <video
-                      className="absolute inset-0 size-full object-cover"
+                      className={cn(
+                        "absolute inset-0 size-full object-cover",
+                        videoClassName
+                      )}
                       src={video}
                       autoPlay
                       loop
                       muted
                       playsInline
+
                     />
                   ) : (
                     /* front camera */

@@ -44,6 +44,7 @@ function Home() {
         body="Quick check-ins let every student share how they're doing in seconds. You get a read on the whole class at a glance, so you can meet kids where they are before the lesson even begins."
         cta="Get started free"
         video="/belonging-demo.mp4"
+        videoClassName="scale-125"
       />
       <FeaturesLibrary
         theme="mint"
