@@ -151,7 +151,7 @@ export default function HeroSection() {
                                 data-lifted={lifted === 'tablet'}
                                 className="group/tablet absolute -top-[16cqw] z-0 w-[42%] origin-bottom cursor-pointer transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:z-40 hover:rotate-[2deg] hover:scale-[1.03] data-[lifted=true]:z-40 data-[lifted=true]:rotate-[2deg] data-[lifted=true]:scale-[1.03]">
                                 <div className="rounded-[3.105cqw] bg-neutral-900 p-[1.294cqw] shadow-xl shadow-sky-900/15 ring-1 ring-black/5">
-                                    <div className="bg-muted aspect-[3/4.24] overflow-hidden rounded-[2.2cqw]">
+                                    <div className="bg-muted aspect-[3/4.26] overflow-hidden rounded-[2.2cqw]">
                                         <video
                                             ref={tabletVideoRef}
                                             className="size-full object-cover"
