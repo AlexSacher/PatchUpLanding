@@ -45,21 +45,49 @@ export default function FeaturesChart() {
   const toggle = (k: SeriesKey) => setShow((s) => ({ ...s, [k]: !s[k] }))
 
   return (
-    <section id="insights" className="scroll-mt-24 py-12 md:py-20">
+    <section id="insights" className="scroll-mt-24 py-12 md:py-10">
       <div className="mx-auto w-[90%] max-w-[1600px]">
         <div className="relative overflow-hidden rounded-[2.5rem]  border-purple-100/80 bg-gradient-to-br from-violet-100  to-purple-100/90 py-12 sm:py-16">
           <NoiseTexture
             className="opacity-20"
             noiseOpacity={0.5}
           />
-          <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 px-6 lg:grid-cols-2 lg:gap-16">
+          <div className="relative z-10 mx-auto flex max-w-6xl flex-col px-6 lg:grid lg:grid-cols-2 lg:items-center lg:gap-x-16">
+              {/* Eyebrow + heading (first on mobile) */}
+              <AnimatedGroup
+                className="order-1 lg:col-start-1 lg:row-start-1 lg:self-end"
+                variants={{
+                  container: {
+                    visible: {
+                      transition: { staggerChildren: 0.12, delayChildren: 0.1 },
+                    },
+                  },
+                  ...inViewTransition,
+                }}
+                viewport={viewport}
+              >
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-[#EC6866] px-3 py-1 text-sm font-semibold text-white shadow-sm shadow-[#EC6866]/20">
+                  <BarChart3 className="size-3.5" />
+                  Insights
+                  <span className="font-medium text-white">with Classroom+</span>
+                </span>
+                <h2 className="mt-5 text-3xl font-semibold tracking-tight text-balance md:text-4xl">
+                  Notice when more students arrive ready to learn
+                </h2>
+              </AnimatedGroup>
+
               {/* Chart card */}
               <motion.div
                 initial={{ opacity: 0, filter: "blur(12px)", y: 12 }}
                 whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
                 viewport={viewport}
-                transition={{ type: "spring", bounce: 0.3, duration: 1.5 }}
-                className="rounded-2xl border border-violet-100/70 bg-card p-6 shadow-xl shadow-violet-900/5 lg:order-2"
+                transition={{
+                  type: "spring",
+                  bounce: 0.3,
+                  duration: 1.5,
+                  delay: 0.34,
+                }}
+                className="order-2 my-8 rounded-2xl border border-violet-100/70 bg-card p-6 shadow-xl shadow-violet-900/5 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:my-0 lg:self-center"
               >
                 <h3 className="text-sm font-semibold">
                   How one class answered "How are you feeling?", before and
@@ -179,26 +207,20 @@ export default function FeaturesChart() {
                 </div>
               </motion.div>
 
-              {/* Copy */}
+              {/* Body copy */}
               <AnimatedGroup
-                className="lg:order-1 "
+                className="order-3 lg:col-start-1 lg:row-start-2 lg:self-start"
                 variants={{
                   container: {
-                    visible: { transition: { staggerChildren: 0.12 } },
+                    visible: {
+                      transition: { staggerChildren: 0.12, delayChildren: 0.46 },
+                    },
                   },
                   ...inViewTransition,
                 }}
                 viewport={viewport}
               >
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-[#EC6866] px-3 py-1 text-sm font-semibold text-white shadow-sm shadow-[#EC6866]/20">
-                  <BarChart3 className="size-3.5" />
-                  Insights
-                  <span className="font-medium text-white">with Classroom+</span>
-                </span>
-                <h2 className="mt-5 text-3xl font-semibold tracking-tight text-balance md:text-4xl">
-                  Notice when more students arrive ready to learn
-                </h2>
-                <p className="mt-4 text-base text-muted-foreground">
+                <p className="text-base text-muted-foreground lg:mt-4">
                   A few minutes of SEL a day adds up. As students get the
                   language to name what they feel and simple tools to reset, the
                   whole room starts to settle.
