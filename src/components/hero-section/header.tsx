@@ -3,6 +3,8 @@ import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
 import React from 'react'
+import { useScroll, useMotionValueEvent } from 'motion/react'
+import { cn } from '@/lib/utils'
 
 const menuItems = [
     { name: 'Features', href: '/#features' },
@@ -15,12 +17,20 @@ const signupUrl = 'https://patchup.ca'
 
 export const HeroHeader = () => {
     const [menuState, setMenuState] = React.useState(false)
+    const [scrolled, setScrolled] = React.useState(false)
+    const { scrollY } = useScroll()
+    useMotionValueEvent(scrollY, 'change', (v) => setScrolled(v > 24))
 
     return (
         <header>
             <nav
                 data-state={menuState && 'active'}
-                className="fixed top-0 z-20 w-full border-b bg-background/80 backdrop-blur-lg">
+                className={cn(
+                    'fixed top-0 z-20 w-full border-b transition-colors duration-300',
+                    scrolled || menuState
+                        ? 'border-border bg-background/60 backdrop-blur-lg'
+                    : 'border-transparent bg-background/0',
+                )}>
                 <div className="mx-auto max-w-6xl px-6 lg:px-12">
                     <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
                         <div className="flex w-full justify-between lg:w-auto">

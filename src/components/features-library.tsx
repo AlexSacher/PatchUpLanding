@@ -59,6 +59,7 @@ export default function FeaturesLibrary({
   cta = "Get started free",
   video,
   videoClassName,
+  aspectClassName = "aspect-[4.3/3]",
 }: {
   id?: string
   direction?: "default" | "reverse"
@@ -70,6 +71,7 @@ export default function FeaturesLibrary({
   cta?: string
   video?: string
   videoClassName?: string
+  aspectClassName?: string
 }) {
   const reverse = direction === "reverse"
   const t = themes[theme]
@@ -127,17 +129,55 @@ export default function FeaturesLibrary({
               t.envClass
             )}
           />
-          <div className="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-10 px-6 lg:grid-cols-2 lg:gap-16">
+          <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col px-6 lg:grid lg:grid-cols-2 lg:items-center lg:gap-x-16">
+            {/* Eyebrow + heading (first on mobile) */}
+            <AnimatedGroup
+              variants={{
+                container: {
+                  visible: {
+                    transition: { staggerChildren: 0.12, delayChildren: 0.1 },
+                  },
+                },
+                ...inViewTransition,
+              }}
+              viewport={viewport}
+              className={cn(
+                "order-1 lg:row-start-1 lg:self-end",
+                reverse ? "lg:col-start-1" : "lg:col-start-2"
+              )}
+            >
+              <p
+                className={cn(
+                  "flex items-center gap-2 text-sm font-semibold",
+                  t.eyebrow
+                )}
+              >
+                <EyebrowIcon className="size-4" />
+                {eyebrow}
+              </p>
+              <h2 className="mt-4 text-4xl font-semibold tracking-tight text-balance text-foreground md:text-5xl">
+                {heading}
+              </h2>
+            </AnimatedGroup>
+
             {/* Plain tablet mockup */}
             <motion.div
               initial={{ opacity: 0, filter: "blur(12px)", y: 12 }}
               whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
               viewport={viewport}
-              transition={{ type: "spring", bounce: 0.3, duration: 1.5 }}
-              className={cn(reverse && "lg:order-2")}
+              transition={{
+                type: "spring",
+                bounce: 0.3,
+                duration: 1.5,
+                delay: 0.34,
+              }}
+              className={cn(
+                "order-2 my-8 lg:my-0 lg:row-span-2 lg:row-start-1 lg:self-center",
+                reverse ? "lg:col-start-2" : "lg:col-start-1"
+              )}
             >
-              <div className="rounded-[2rem] bg-neutral-900 p-3 shadow-2xl ring-1 shadow-black/10 ring-black/5">
-                <div className="relative aspect-[4.3/3] overflow-hidden rounded-[1.25rem] bg-muted ">
+                <div className="rounded-[1.25rem] bg-neutral-900 p-1.5 shadow-2xl ring-1 shadow-black/10 ring-black/5 lg:rounded-[2rem] lg:p-3">
+                <div className={cn("relative overflow-hidden rounded-[0.85rem] bg-muted lg:rounded-[1.25rem]", aspectClassName)}>
                   {video ? (
                     <video
                       className={cn(
@@ -159,32 +199,23 @@ export default function FeaturesLibrary({
               </div>
             </motion.div>
 
-            {/* Copy */}
+            {/* Body + CTA */}
             <AnimatedGroup
               variants={{
                 container: {
                   visible: {
-                    transition: { staggerChildren: 0.12, delayChildren: 0.1 },
+                    transition: { staggerChildren: 0.12, delayChildren: 0.46 },
                   },
                 },
                 ...inViewTransition,
               }}
               viewport={viewport}
-              className={cn(reverse && "lg:order-1")}
+              className={cn(
+                "order-3 lg:row-start-2 lg:self-start",
+                reverse ? "lg:col-start-1" : "lg:col-start-2"
+              )}
             >
-              <p
-                className={cn(
-                  "flex items-center gap-2 text-sm font-semibold",
-                  t.eyebrow
-                )}
-              >
-                <EyebrowIcon className="size-4" />
-                {eyebrow}
-              </p>
-              <h2 className="mt-4 text-4xl font-semibold tracking-tight text-balance text-foreground md:text-5xl">
-                {heading}
-              </h2>
-              <p className="mt-5 text-lg text-muted-foreground">{body}</p>
+              <p className="text-lg text-muted-foreground lg:mt-5">{body}</p>
               <Button
                 render={<a href="https://patchup.ca" />}
                 nativeButton={false}
