@@ -45,7 +45,7 @@ export default function FeaturesChart() {
   const toggle = (k: SeriesKey) => setShow((s) => ({ ...s, [k]: !s[k] }))
 
   return (
-    <section id="insights" className="scroll-mt-24 py-12 md:py-20">
+    <section id="insights" className="scroll-mt-24 py-12 md:py-10">
       <div className="mx-auto w-[90%] max-w-[1600px]">
         <div className="relative overflow-hidden rounded-[2.5rem]  border-purple-100/80 bg-gradient-to-br from-violet-100  to-purple-100/90 py-12 sm:py-16">
           <NoiseTexture
