@@ -25,7 +25,7 @@ export default function CallToActionTwo() {
           whileInView={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
           viewport={viewport}
           transition={{ type: "spring", bounce: 0.3, duration: 1.1 }}
-          className="relative isolate overflow-hidden rounded-[2.5rem] bg-white px-6 pt-6 pb-[10.5rem]  shadow-sm sm:px-10 md:pt-24 md:pb-[28rem] lg:px-16"
+          className="relative isolate overflow-hidden rounded-[2.5rem] bg-white px-6 pt-7 pb-[10.5rem]  shadow-sm sm:px-10 md:pt-24 md:pb-[28rem] lg:px-16"
         >
           {/* Classroom scene, full-bleed behind the card content */}
           <img
