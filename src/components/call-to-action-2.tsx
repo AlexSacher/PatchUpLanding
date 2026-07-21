@@ -18,26 +18,26 @@ const viewport = { once: true, margin: "-80px" as const }
 
 export default function CallToActionTwo() {
   return (
-    <section className="px-4 pb-16 md:px-6 md:pb-24">
+    <section className="px-4 pb-12 md:px-6 md:pb-12 mt-24">
       <div className="mx-auto w-[90%] max-w-[1600px]">
         <motion.div
           initial={{ opacity: 0, scale: 0.92, y: 32, filter: "blur(12px)" }}
           whileInView={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
           viewport={viewport}
           transition={{ type: "spring", bounce: 0.3, duration: 1.1 }}
-          className="relative isolate overflow-hidden rounded-[2.5rem] bg-white px-6 pt-20 pb-20  shadow-sm sm:px-10 md:pt-24 md:pb-[28rem] lg:px-16"
+          className="relative isolate overflow-hidden rounded-[2.5rem] bg-white px-6 pt-20 pb-20  shadow-sm sm:px-10 md:pt-24 md:pb-[26rem] lg:px-16"
         >
           {/* Classroom scene, full-bleed behind the card content */}
           <img
             src="/hero-classroom-scene-clean.webp"
             alt=""
             aria-hidden
-            className="pointer-events-none absolute left-1/2 top-0 -z-20 h-full w-[110%] max-w-none -translate-x-[53%] object-cover object-center opacity-50 md:opacity-100"
+            className="pointer-events-none absolute left-1/2 top-0 -z-20 h-full w-[110%] max-w-none -translate-x-[53%]  object-cover object-center"
           />
           {/* White gradient wash so the scene fades softly into the card */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-white via-white/60 to-white/45 md:via-white/40 md:to-transparent"
+            className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-white via-white/60 to-white/45 md:via-white/25 md:to-transparent"
           />
           <AnimatedGroup
             variants={{

@@ -60,6 +60,7 @@ export default function FeaturesLibrary({
   video,
   videoClassName,
   aspectClassName = "aspect-[4.3/3]",
+  pt = "pt-10",
 }: {
   id?: string
   direction?: "default" | "reverse"
@@ -72,12 +73,13 @@ export default function FeaturesLibrary({
   video?: string
   videoClassName?: string
   aspectClassName?: string
+  pt?: string
 }) {
   const reverse = direction === "reverse"
   const t = themes[theme]
 
   return (
-    <section id={id} className="scroll-mt-24 py-10">
+    <section id={id} className={cn("scroll-mt-24", pt)}>
       <div className="mx-auto w-[90%] max-w-[1600px]">
         {/* Tabs */}
         {/* <motion.div

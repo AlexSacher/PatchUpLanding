@@ -32,6 +32,7 @@ function Home() {
         video="/lesson5.mp4"
         aspectClassName="aspect-[4.3/3]"
         videoClassName="scale-100"
+        pt="pt-0"
       />
       <FeaturesLibrary
         direction="reverse"
