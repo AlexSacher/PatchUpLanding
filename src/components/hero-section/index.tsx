@@ -86,7 +86,7 @@ export default function HeroSection() {
                         aria-hidden
                         className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(90%_65%_at_100%_20%,rgba(102,214,234,0.28)_0%,rgba(102,214,234,0.10)_45%,transparent_75%),radial-gradient(70%_55%_at_0%_0%,rgba(0,162,232,0.14)_0%,transparent_70%),linear-gradient(135deg,#F3FBFD_0%,#FFFFFF_70%)]"
                     /> */}
-                    <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 px-6 py-24 sm:py-28 lg:max-w-[1280px] lg:grid-cols-[0.76fr_1.24fr] lg:gap-14 lg:py-32">
+                    <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 px-6 py-0 sm:py-28 lg:max-w-[1280px] lg:grid-cols-[0.76fr_1.24fr] lg:gap-14 lg:py-32">
                         {/* Left, copy */}
                         <div className="text-center lg:text-left">
                             <motion.h1
@@ -144,14 +144,14 @@ export default function HeroSection() {
                             initial={{ opacity: 0, filter: 'blur(12px)', y: 16 }}
                             animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
                             transition={{ type: 'spring', bounce: 0.3, duration: 1.5 }}
-                            className="@container relative mx-auto mt-[min(28vw,176px)] w-[86%] max-w-[618px] lg:mx-0 lg:mt-20 lg:w-full lg:max-w-none lg:-mr-14 xl:-mr-32 2xl:-mr-44">
+                            className="@container relative mx-auto mt-[min(28vw,80px)] w-[86%] max-w-[618px] lg:mx-0 lg:mt-20 lg:w-full lg:max-w-none lg:-mr-14 xl:-mr-32 2xl:-mr-44">
                             {/* Tablet, raised to the upper-left */}
                             <div
                                 onClick={() => toggleLift('tablet')}
                                 data-lifted={lifted === 'tablet'}
-                                className="group/tablet absolute -top-[15cqw] z-0 w-[42%] origin-bottom cursor-pointer transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:z-40 hover:rotate-[2deg] hover:scale-[1.03] data-[lifted=true]:z-40 data-[lifted=true]:rotate-[2deg] data-[lifted=true]:scale-[1.03]">
+                                className="group/tablet absolute -top-[16cqw] z-0 w-[42%] origin-bottom cursor-pointer transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:z-40 hover:rotate-[2deg] hover:scale-[1.03] data-[lifted=true]:z-40 data-[lifted=true]:rotate-[2deg] data-[lifted=true]:scale-[1.03]">
                                 <div className="rounded-[3.105cqw] bg-neutral-900 p-[1.294cqw] shadow-xl shadow-sky-900/15 ring-1 ring-black/5">
-                                    <div className="bg-muted aspect-[3/4.2] overflow-hidden rounded-[2.2cqw]">
+                                    <div className="bg-muted aspect-[3/4.24] overflow-hidden rounded-[2.2cqw]">
                                         <video
                                             ref={tabletVideoRef}
                                             className="size-full object-cover"
