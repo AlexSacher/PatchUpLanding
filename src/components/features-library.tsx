@@ -58,6 +58,9 @@ export default function FeaturesLibrary({
   body = "Lessons, activities, and check-ins that help students name what they feel, build empathy, and learn to manage big emotions, woven into your day, not added on top.",
   cta = "Get started free",
   video,
+  videoClassName,
+  aspectClassName = "aspect-[4.3/3]",
+  pt = "pt-10",
 }: {
   id?: string
   direction?: "default" | "reverse"
@@ -68,12 +71,15 @@ export default function FeaturesLibrary({
   body?: string
   cta?: string
   video?: string
+  videoClassName?: string
+  aspectClassName?: string
+  pt?: string
 }) {
   const reverse = direction === "reverse"
   const t = themes[theme]
 
   return (
-    <section id={id} className="scroll-mt-24 py-10">
+    <section id={id} className={cn("scroll-mt-24", pt)}>
       <div className="mx-auto w-[90%] max-w-[1600px]">
         {/* Tabs */}
         {/* <motion.div
@@ -125,35 +131,8 @@ export default function FeaturesLibrary({
               t.envClass
             )}
           />
-          <div className="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-10 px-6 lg:grid-cols-2 lg:gap-16">
-            {/* Plain tablet mockup */}
-            <motion.div
-              initial={{ opacity: 0, filter: "blur(12px)", y: 12 }}
-              whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-              viewport={viewport}
-              transition={{ type: "spring", bounce: 0.3, duration: 1.5 }}
-              className={cn(reverse && "lg:order-2")}
-            >
-              <div className="rounded-[2rem] bg-neutral-900 p-3 shadow-2xl ring-1 shadow-black/10 ring-black/5">
-                <div className="relative aspect-[4.3/3] overflow-hidden rounded-[1.25rem] bg-muted">
-                  {video ? (
-                    <video
-                      className="absolute inset-0 size-full object-cover"
-                      src={video}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                    />
-                  ) : (
-                    /* front camera */
-                    <span className="absolute top-3 left-1/2 size-1.5 -translate-x-1/2 rounded-full bg-neutral-700/60" />
-                  )}
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Copy */}
+          <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col px-6 lg:grid lg:grid-cols-2 lg:items-center lg:gap-x-16">
+            {/* Eyebrow + heading (first on mobile) */}
             <AnimatedGroup
               variants={{
                 container: {
@@ -164,7 +143,10 @@ export default function FeaturesLibrary({
                 ...inViewTransition,
               }}
               viewport={viewport}
-              className={cn(reverse && "lg:order-1")}
+              className={cn(
+                "order-1 lg:row-start-1 lg:self-end",
+                reverse ? "lg:col-start-1" : "lg:col-start-2"
+              )}
             >
               <p
                 className={cn(
@@ -178,7 +160,64 @@ export default function FeaturesLibrary({
               <h2 className="mt-4 text-4xl font-semibold tracking-tight text-balance text-foreground md:text-5xl">
                 {heading}
               </h2>
-              <p className="mt-5 text-lg text-muted-foreground">{body}</p>
+            </AnimatedGroup>
+
+            {/* Plain tablet mockup */}
+            <motion.div
+              initial={{ opacity: 0, filter: "blur(12px)", y: 12 }}
+              whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+              viewport={viewport}
+              transition={{
+                type: "spring",
+                bounce: 0.3,
+                duration: 1.5,
+                delay: 0.34,
+              }}
+              className={cn(
+                "order-2 my-8 lg:my-0 lg:row-span-2 lg:row-start-1 lg:self-center",
+                reverse ? "lg:col-start-2" : "lg:col-start-1"
+              )}
+            >
+                <div className="rounded-[1.25rem] bg-neutral-900 p-1.5 shadow-2xl ring-1 shadow-black/10 ring-black/5 lg:rounded-[2rem] lg:p-3">
+                <div className={cn("relative overflow-hidden rounded-[0.85rem] bg-muted lg:rounded-[1.25rem]", aspectClassName)}>
+                  {video ? (
+                    <video
+                      className={cn(
+                        "absolute inset-0 size-full object-cover",
+                        videoClassName
+                      )}
+                      src={video}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+
+                    />
+                  ) : (
+                    /* front camera */
+                    <span className="absolute top-3 left-1/2 size-1.5 -translate-x-1/2 rounded-full bg-neutral-700/60" />
+                  )}
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Body + CTA */}
+            <AnimatedGroup
+              variants={{
+                container: {
+                  visible: {
+                    transition: { staggerChildren: 0.12, delayChildren: 0.46 },
+                  },
+                },
+                ...inViewTransition,
+              }}
+              viewport={viewport}
+              className={cn(
+                "order-3 lg:row-start-2 lg:self-start",
+                reverse ? "lg:col-start-1" : "lg:col-start-2"
+              )}
+            >
+              <p className="text-lg text-muted-foreground lg:mt-5">{body}</p>
               <Button
                 render={<a href="https://patchup.ca" />}
                 nativeButton={false}
