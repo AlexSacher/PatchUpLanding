@@ -28,7 +28,9 @@ export const HeroHeader = () => {
                 className={cn(
                     'fixed top-0 z-20 w-full border-b transition-colors duration-300',
                     scrolled || menuState
-                        ? 'border-border bg-background/60 backdrop-blur-lg'
+                        // Solid white on the mobile header, translucent + blurred
+                        // from lg up, which is where the desktop nav takes over.
+                        ? 'border-border bg-background lg:bg-background/60 lg:backdrop-blur-lg'
                     : 'border-transparent bg-background/0',
                 )}>
                 <div className="mx-auto max-w-6xl px-6 lg:px-12">
