@@ -108,7 +108,7 @@ export default function HeroSection() {
                                 animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
                                 transition={{ type: 'spring', bounce: 0.3, duration: 1.5 }}
                                 className="text-muted-foreground mx-auto mt-5 max-w-lg text-pretty text-lg lg:mx-0">
-                                PatchUp gives teachers engaging lessons, activities, and check-ins to build social emotional skills, support positive behaviour, and create calmer classrooms.
+                                PatchUp provides teachers with simple, engaging tools to help students regulate their emotions, connect with others, and respond more positively to everyday challenges.
                             </motion.p>
 
 
