@@ -17,6 +17,8 @@ const inViewTransition = {
 }
 const viewport = { once: true, margin: '-80px' as const }
 
+const FORM_ENDPOINT = 'https://formspree.io/f/xvgayygr'
+
 const inputClass =
     'w-full rounded-lg border bg-background px-4 py-2.5 text-sm outline-none placeholder:text-muted-foreground focus:ring-2 focus:ring-primary/30'
 const errorInputClass = 'border-red-400 focus:ring-red-300'
@@ -62,7 +64,7 @@ export default function ContactEight() {
     const [values, setValues] = useState<FormValues>(initialValues)
     const [errors, setErrors] = useState<FormErrors>({})
     const [touched, setTouched] = useState<Partial<Record<FieldName, boolean>>>({})
-    const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
+    const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
     const handleChange = (
         e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -104,9 +106,16 @@ export default function ContactEight() {
         }
 
         setStatus('submitting')
-        // Simulated submission — swap this for a real endpoint when the backend is ready.
-        await new Promise((resolve) => setTimeout(resolve, 900))
-        setStatus('success')
+        try {
+            const response = await fetch(FORM_ENDPOINT, {
+                method: 'POST',
+                headers: { Accept: 'application/json' },
+                body: new FormData(e.currentTarget),
+            })
+            setStatus(response.ok ? 'success' : 'error')
+        } catch {
+            setStatus('error')
+        }
     }
 
     if (status === 'success') {
@@ -167,7 +176,12 @@ export default function ContactEight() {
                     className="mx-auto mt-12 max-w-2xl"
                     variants={{ container: { visible: { transition: { staggerChildren: 0.1 } } }, ...inViewTransition }}
                     viewport={viewport}>
-                    <form className="mt-8 space-y-4" onSubmit={handleSubmit} noValidate>
+                    <form
+                        className="mt-8 space-y-4"
+                        action={FORM_ENDPOINT}
+                        method="POST"
+                        onSubmit={handleSubmit}
+                        noValidate>
                         <div className="grid gap-3 sm:grid-cols-2">
                             <Field
                                 id="firstName"
@@ -232,6 +246,12 @@ export default function ContactEight() {
                                 </p>
                             )}
                         </div>
+
+                        {status === 'error' && (
+                            <p className="text-sm text-red-500">
+                                Something went wrong sending your message. Please try again.
+                            </p>
+                        )}
 
                         <button
                             type="submit"
