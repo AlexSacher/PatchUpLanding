@@ -118,7 +118,7 @@ export default function HeroSection() {
                                 transition={{ type: 'spring', bounce: 0.3, duration: 1.5 }}
                                 className="mt-7">
                                 <ShinyButton
-                                    href="https://patchup.ca"
+                                    href="https://patchup.ca/register"
                                     className="bg-primary border-primary px-8 py-3">
                                     <span className="text-base normal-case tracking-normal text-white">Get started free</span>
                                 </ShinyButton>

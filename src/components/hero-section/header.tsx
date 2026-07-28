@@ -13,7 +13,7 @@ const menuItems = [
     { name: 'Contact', href: '/contact' },
 ]
 
-const signupUrl = 'https://patchup.ca'
+const signupUrl = 'https://patchup.ca/register'
 
 export const HeroHeader = () => {
     const [menuState, setMenuState] = React.useState(false)
@@ -31,7 +31,7 @@ export const HeroHeader = () => {
                         // Solid white on the mobile header, translucent + blurred
                         // from lg up, which is where the desktop nav takes over.
                         ? 'border-border bg-background lg:bg-background/60 lg:backdrop-blur-lg'
-                    : 'border-transparent bg-background/0',
+                        : 'border-transparent bg-background/0',
                 )}>
                 <div className="mx-auto max-w-6xl px-6 lg:px-12">
                     <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
