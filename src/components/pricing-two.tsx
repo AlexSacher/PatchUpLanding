@@ -38,16 +38,15 @@ type Plan = {
 const plans: Plan[] = [
     {
         name: 'Classroom',
-        description: 'Everything a teacher needs to run SEL and belonging in one classroom.',
+        description: 'Everything a teacher needs to run SEL activities and lessons.',
         monthly: 0,
         annual: 0,
-        cadence: 'Free forever',
+        cadence: 'Free for classroom use',
         cta: 'Get started free',
         features: [
-            'All SEL & belonging lessons, activities, and check-ins',
-            'Unlimited classes',
-            'Students join with a code, no accounts',
-            'In-the-moment class check-ins',
+            'All SEL lessons, activities, and check-ins',
+            'Unlimited sessions',
+            'Student access on tablet, desktop, or mobile',
         ],
         footnote: 'Insights & data available with Classroom+',
     },
@@ -64,8 +63,8 @@ const plans: Plan[] = [
         features: [
             'Trends over time, before vs. after',
             'Class & student progress views',
-            'Export & share reports',
-            'Priority email & chat support',
+            'Export & share reports and data',
+            'Survey creation and implementation'
         ],
     },
     {
@@ -80,7 +79,7 @@ const plans: Plan[] = [
         featuresLabel: 'Everything in Classroom+, plus:',
         features: [
             'District-wide onboarding & training',
-            'SSO & roster sync',
+            'Aggregated data and trends at all levels',
             'Dedicated success manager',
             'Custom agreements & invoicing',
         ],
@@ -107,8 +106,8 @@ export default function PricingTwo() {
                     </h2>
                     <p className="text-muted-foreground mt-4 text-lg">
                         Classroom is free for teachers. Add{' '}
-                        <span className="text-primary font-medium">Insights</span> with Classroom+ whenever you want to
-                        see how students are doing over time.
+                        <span className="text-primary font-medium">Insights</span> with Classroom+ to track
+                        student progress over time.
                     </p>
 
                     {/* Billing toggle */}

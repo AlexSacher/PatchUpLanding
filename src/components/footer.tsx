@@ -9,15 +9,15 @@ const links = [
         title: 'Pricing',
         href: '/#pricing',
     },
-    {
-        title: 'For Teachers',
-        href: '/#pricing',
-    },
-    {
-        // No privacy page exists yet, so this points at contact until there is one.
-        title: 'Privacy',
-        href: '/contact',
-    },
+    // {
+    //     title: 'For Teachers',
+    //     href: '/#pricing',
+    // },
+    // {
+    //     // No privacy page exists yet, so this points at contact until there is one.
+    //     title: 'Privacy',
+    //     href: '/contact',
+    // },
     {
         title: 'Contact',
         href: '/contact',

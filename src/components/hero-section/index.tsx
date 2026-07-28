@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'motion/react'
-import { InteractiveGridPattern } from '@/components/ui/interactive-grid-pattern'
 import { ShinyButton } from '@/components/ui/shiny-button'
 import { Highlighter } from '@/components/ui/highlighter'
 import { HeroHeader } from './header'
@@ -35,7 +34,7 @@ export default function HeroSection() {
         // and pause, otherwise one runs on while the other sits still.
         const followPlay = () => {
             resync()
-            if (tablet.paused) tablet.play().catch(() => {})
+            if (tablet.paused) tablet.play().catch(() => { })
         }
         const followPause = () => {
             if (!tablet.paused) tablet.pause()
@@ -94,13 +93,13 @@ export default function HeroSection() {
                                 animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
                                 transition={{ type: 'spring', bounce: 0.3, duration: 1.5 }}
                                 className="text-foreground text-balance text-5xl font-bold tracking-tight md:text-6xl">
-                                Helping kids feel calm, kind, and{' '}
+                                Helping kids feel calm, connected, and{' '}
                                 <Highlighter
                                     action="underline"
                                     color="#00A2E8"
                                     strokeWidth={3}
                                     delay={700}>
-                                    <span className="text-primary">connected</span>
+                                    <span className="text-primary">ready to learn</span>
                                 </Highlighter>
                             </motion.h1>
 
@@ -109,8 +108,7 @@ export default function HeroSection() {
                                 animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
                                 transition={{ type: 'spring', bounce: 0.3, duration: 1.5 }}
                                 className="text-muted-foreground mx-auto mt-5 max-w-lg text-pretty text-lg lg:mx-0">
-                                PatchUp gives K–12 teachers ready-to-run lessons, activities, and check-ins for
-                                social-emotional learning and intercultural 
+                                PatchUp gives teachers engaging lessons, activities, and check-ins to build social emotional skills, support positive behaviour, and create calmer classrooms.
                             </motion.p>
 
 
