@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 import { motion, useInView } from "motion/react"
-import { RotateCcw, BarChart3, ArrowRight } from "lucide-react"
+import { RotateCcw, BarChart3 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { AnimatedGroup } from "@/components/motion-primitives/animated-group"
 import { NoiseTexture } from "@/components/ui/noise-texture"
