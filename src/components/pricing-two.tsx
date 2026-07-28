@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
 import { Check, BarChart3 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -18,7 +19,7 @@ const inViewTransition = {
     },
 }
 const viewport = { once: true, margin: '-80px' as const }
-const signupUrl = 'https://patchup.ca'
+const signupUrl = 'https://patchup.ca/register'
 
 type Plan = {
     name: string
@@ -146,7 +147,7 @@ export default function PricingTwo() {
                     viewport={viewport}>
                     {plans.map((plan) => {
                         const amount = annual ? plan.annual : plan.monthly
-                        const href = plan.cta === 'Get started free' ? signupUrl : '/contact'
+                        const isSignup = plan.cta === 'Get started free'
                         return (
                             <div
                                 key={plan.name}
@@ -171,9 +172,9 @@ export default function PricingTwo() {
                                 <p className="text-muted-foreground mt-1 text-sm">{plan.cadence}</p>
 
                                 <Button
-                                    render={<a href={href} />}
+                                    render={isSignup ? <a href={signupUrl} /> : <Link to="/contact" />}
                                     nativeButton={false}
-                                    variant={plan.highlighted || plan.cta === 'Get started free' ? 'default' : 'outline'}
+                                    variant={plan.highlighted || isSignup ? 'default' : 'outline'}
                                     className="mt-6 w-full">
                                     <span>{plan.cta}</span>
                                 </Button>
