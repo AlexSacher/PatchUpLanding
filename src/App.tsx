@@ -8,6 +8,7 @@ import PricingTwo from "@/components/pricing-two"
 import CallToActionTwo from "@/components/call-to-action-2"
 import FooterSection from "@/components/footer"
 import ContactPage from "@/pages/contact-page"
+import NotFoundPage from "@/pages/not-found-page"
 
 function Home() {
   return (
@@ -101,6 +102,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>
   )
