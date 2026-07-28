@@ -146,7 +146,7 @@ export default function PricingTwo() {
                     viewport={viewport}>
                     {plans.map((plan) => {
                         const amount = annual ? plan.annual : plan.monthly
-                        const href = plan.cta === 'Get started free' ? signupUrl : '#contact'
+                        const href = plan.cta === 'Get started free' ? signupUrl : '/contact'
                         return (
                             <div
                                 key={plan.name}

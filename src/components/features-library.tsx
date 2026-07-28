@@ -38,7 +38,7 @@ const themes = {
     eyebrow: "text-green-700",
     env: "/env-mint.png",
     envClass: "opacity-80",
-  button: "bg-green-700 text-white hover:bg-green-700",
+    button: "bg-green-700 text-white hover:bg-green-700",
   },
 } as const
 
@@ -178,7 +178,7 @@ export default function FeaturesLibrary({
                 reverse ? "lg:col-start-2" : "lg:col-start-1"
               )}
             >
-                <div className="rounded-[1.25rem] bg-neutral-900 p-1.5 shadow-2xl ring-1 shadow-black/10 ring-black/5 lg:rounded-[2rem] lg:p-3">
+              <div className="rounded-[1.25rem] bg-neutral-900 p-1.5 shadow-2xl ring-1 shadow-black/10 ring-black/5 lg:rounded-[2rem] lg:p-3">
                 <div className={cn("relative overflow-hidden rounded-[0.85rem] bg-muted lg:rounded-[1.25rem]", aspectClassName)}>
                   {video ? (
                     <video
@@ -219,7 +219,7 @@ export default function FeaturesLibrary({
             >
               <p className="text-lg text-muted-foreground lg:mt-5">{body}</p>
               <Button
-                render={<a href="https://patchup.ca" />}
+                render={<a href="https://patchup.ca/register" />}
                 nativeButton={false}
                 size="lg"
                 className={cn("mt-8", t.button)}
