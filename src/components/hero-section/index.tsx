@@ -85,7 +85,7 @@ export default function HeroSection() {
                         aria-hidden
                         className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(90%_65%_at_100%_20%,rgba(102,214,234,0.28)_0%,rgba(102,214,234,0.10)_45%,transparent_75%),radial-gradient(70%_55%_at_0%_0%,rgba(0,162,232,0.14)_0%,transparent_70%),linear-gradient(135deg,#F3FBFD_0%,#FFFFFF_70%)]"
                     /> */}
-                    <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 px-6 py-0 sm:py-28 lg:max-w-[1280px] lg:grid-cols-[0.76fr_1.24fr] lg:gap-14 lg:py-32">
+                    <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 px-6 pt-20 sm:pt-0 sm:py-28 lg:max-w-[1280px] lg:grid-cols-[0.76fr_1.24fr] lg:gap-14 lg:py-32">
                         {/* Left, copy */}
                         <div className="text-center lg:text-left">
                             <motion.h1
