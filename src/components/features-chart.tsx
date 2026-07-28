@@ -53,191 +53,186 @@ export default function FeaturesChart() {
             noiseOpacity={0.5}
           />
           <div className="relative z-10 mx-auto flex max-w-6xl flex-col px-6 lg:grid lg:grid-cols-2 lg:items-center lg:gap-x-16">
-              {/* Eyebrow + heading (first on mobile) */}
-              <AnimatedGroup
-                className="order-1 lg:col-start-1 lg:row-start-1 lg:self-end"
-                variants={{
-                  container: {
-                    visible: {
-                      transition: { staggerChildren: 0.12, delayChildren: 0.1 },
-                    },
+            {/* Eyebrow + heading (first on mobile) */}
+            <AnimatedGroup
+              className="order-1 lg:col-start-1 lg:row-start-1 lg:self-end"
+              variants={{
+                container: {
+                  visible: {
+                    transition: { staggerChildren: 0.12, delayChildren: 0.1 },
                   },
-                  ...inViewTransition,
-                }}
-                viewport={viewport}
-              >
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-[#EC6866] px-3 py-1 text-sm font-semibold text-white shadow-sm shadow-[#EC6866]/20">
-                  <BarChart3 className="size-3.5" />
-                  Insights
-                  <span className="font-medium text-white">with Classroom+</span>
-                </span>
-                <h2 className="mt-5 text-3xl font-semibold tracking-tight text-balance md:text-4xl">
-                  Notice when more students arrive ready to learn
-                </h2>
-              </AnimatedGroup>
+                },
+                ...inViewTransition,
+              }}
+              viewport={viewport}
+            >
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-[#EC6866] px-3 py-1 text-sm font-semibold text-white shadow-sm shadow-[#EC6866]/20">
+                <BarChart3 className="size-3.5" />
+                Insights
+                <span className="font-medium text-white">with Classroom+</span>
+              </span>
+              <h2 className="mt-5 text-3xl font-semibold tracking-tight text-balance md:text-4xl">
+                See how your classroom changes over time
+              </h2>
+            </AnimatedGroup>
 
-              {/* Chart card */}
-              <motion.div
-                initial={{ opacity: 0, filter: "blur(12px)", y: 12 }}
-                whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-                viewport={viewport}
-                transition={{
-                  type: "spring",
-                  bounce: 0.3,
-                  duration: 1.5,
-                  delay: 0.34,
-                }}
-                className="order-2 my-8 rounded-2xl border border-violet-100/70 bg-card p-6 shadow-xl shadow-violet-900/5 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:my-0 lg:self-center"
-              >
-                <h3 className="text-sm font-semibold">
-                  How one class answered "How are you feeling?", before and
-                  after a few weeks of check-ins
-                </h3>
+            {/* Chart card */}
+            <motion.div
+              initial={{ opacity: 0, filter: "blur(12px)", y: 12 }}
+              whileInView={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+              viewport={viewport}
+              transition={{
+                type: "spring",
+                bounce: 0.3,
+                duration: 1.5,
+                delay: 0.34,
+              }}
+              className="order-2 my-8 rounded-2xl border border-violet-100/70 bg-card p-6 shadow-xl shadow-violet-900/5 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:my-0 lg:self-center"
+            >
+              <h3 className="text-sm font-semibold">
+                How one class answered "How are you feeling?", before and
+                after a few weeks of check-ins
+              </h3>
 
-                {/* Legend (toggles) + replay control */}
-                <div className="mt-4 flex items-center justify-between">
-                  <div className="flex items-center gap-4">
-                    <LegendChip
-                      label="Before"
-                      active={show.before}
-                      swatch="bg-zinc-300"
-                      onClick={() => toggle("before")}
-                    />
-                    <LegendChip
-                      label="After"
-                      active={show.after}
-                      swatch="bg-violet-600"
-                      onClick={() => toggle("after")}
-                    />
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => setPlayId((p) => p + 1)}
-                    className="flex items-center gap-1 text-xs text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    <RotateCcw className="size-3" />
-                    Replay
-                  </button>
+              {/* Legend (toggles) + replay control */}
+              <div className="mt-4 flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <LegendChip
+                    label="Before"
+                    active={show.before}
+                    swatch="bg-zinc-300"
+                    onClick={() => toggle("before")}
+                  />
+                  <LegendChip
+                    label="After"
+                    active={show.after}
+                    swatch="bg-violet-600"
+                    onClick={() => toggle("after")}
+                  />
                 </div>
+                <button
+                  type="button"
+                  onClick={() => setPlayId((p) => p + 1)}
+                  className="flex items-center gap-1 text-xs text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  <RotateCcw className="size-3" />
+                  Replay
+                </button>
+              </div>
 
-                {/* Plot */}
-                <div className="mt-6 flex gap-2">
-                  <div className="flex items-center">
-                    <span className="rotate-180 text-[10px] text-muted-foreground [writing-mode:vertical-lr]">
-                      Share of responses
-                    </span>
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex">
-                      <div className="w-7 shrink-0" />
-                      <div ref={plotRef} className="relative h-44 flex-1">
-                        {/* Gridlines + y labels */}
-                        {gridValues.map((v) => (
-                          <div
-                            key={v}
-                            className="absolute inset-x-0"
-                            style={{ bottom: `${pos(v)}%` }}
-                          >
-                            <span className="absolute -top-2 right-full mr-1.5 text-[10px] text-muted-foreground tabular-nums">
-                              {v}%
-                            </span>
-                            <div className="border-t border-dashed border-border/60" />
-                          </div>
-                        ))}
-                        {/* Bars */}
+              {/* Plot */}
+              <div className="mt-6 flex gap-2">
+                <div className="flex items-center">
+                  <span className="rotate-180 text-[10px] text-muted-foreground [writing-mode:vertical-lr]">
+                    Share of responses
+                  </span>
+                </div>
+                <div className="flex-1">
+                  <div className="flex">
+                    <div className="w-7 shrink-0" />
+                    <div ref={plotRef} className="relative h-44 flex-1">
+                      {/* Gridlines + y labels */}
+                      {gridValues.map((v) => (
                         <div
-                          key={playId}
-                          className="absolute inset-0 flex items-end justify-around"
+                          key={v}
+                          className="absolute inset-x-0"
+                          style={{ bottom: `${pos(v)}%` }}
                         >
-                          {data.map((d, gi) => {
-                            const groupActive = hover === null || hover.g === gi
-                            return (
-                              <div
-                                key={d.group}
-                                className={cn(
-                                  "flex h-full flex-1 items-end justify-center gap-1.5 transition-opacity duration-300",
-                                  groupActive ? "opacity-100" : "opacity-40"
-                                )}
-                              >
-                                <Bar
-                                  k="before"
-                                  gi={gi}
-                                  value={d.before}
-                                  pct={pos(d.before)}
-                                  visible={show.before && inView}
-                                  hovered={
-                                    hover?.g === gi && hover?.k === "before"
-                                  }
-                                  onHover={setHover}
-                                  delay={gi * 0.08}
-                                />
-                                <Bar
-                                  k="after"
-                                  gi={gi}
-                                  value={d.after}
-                                  pct={pos(d.after)}
-                                  visible={show.after && inView}
-                                  hovered={
-                                    hover?.g === gi && hover?.k === "after"
-                                  }
-                                  onHover={setHover}
-                                  delay={gi * 0.08 + 0.05}
-                                />
-                              </div>
-                            )
-                          })}
-                        </div>
-                      </div>
-                    </div>
-                    {/* X labels */}
-                    <div className="flex">
-                      <div className="w-7 shrink-0" />
-                      <div className="mt-3 flex flex-1 justify-around">
-                        {data.map((d) => (
-                          <span
-                            key={d.group}
-                            className="flex-1 text-center text-xs text-muted-foreground"
-                          >
-                            {d.group}
+                          <span className="absolute -top-2 right-full mr-1.5 text-[10px] text-muted-foreground tabular-nums">
+                            {v}%
                           </span>
-                        ))}
+                          <div className="border-t border-dashed border-border/60" />
+                        </div>
+                      ))}
+                      {/* Bars */}
+                      <div
+                        key={playId}
+                        className="absolute inset-0 flex items-end justify-around"
+                      >
+                        {data.map((d, gi) => {
+                          const groupActive = hover === null || hover.g === gi
+                          return (
+                            <div
+                              key={d.group}
+                              className={cn(
+                                "flex h-full flex-1 items-end justify-center gap-1.5 transition-opacity duration-300",
+                                groupActive ? "opacity-100" : "opacity-40"
+                              )}
+                            >
+                              <Bar
+                                k="before"
+                                gi={gi}
+                                value={d.before}
+                                pct={pos(d.before)}
+                                visible={show.before && inView}
+                                hovered={
+                                  hover?.g === gi && hover?.k === "before"
+                                }
+                                onHover={setHover}
+                                delay={gi * 0.08}
+                              />
+                              <Bar
+                                k="after"
+                                gi={gi}
+                                value={d.after}
+                                pct={pos(d.after)}
+                                visible={show.after && inView}
+                                hovered={
+                                  hover?.g === gi && hover?.k === "after"
+                                }
+                                onHover={setHover}
+                                delay={gi * 0.08 + 0.05}
+                              />
+                            </div>
+                          )
+                        })}
                       </div>
                     </div>
                   </div>
+                  {/* X labels */}
+                  <div className="flex">
+                    <div className="w-7 shrink-0" />
+                    <div className="mt-3 flex flex-1 justify-around">
+                      {data.map((d) => (
+                        <span
+                          key={d.group}
+                          className="flex-1 text-center text-xs text-muted-foreground"
+                        >
+                          {d.group}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              </motion.div>
+              </div>
+            </motion.div>
 
-              {/* Body copy */}
-              <AnimatedGroup
-                className="order-3 lg:col-start-1 lg:row-start-2 lg:self-start"
-                variants={{
-                  container: {
-                    visible: {
-                      transition: { staggerChildren: 0.12, delayChildren: 0.46 },
-                    },
+            {/* Body copy */}
+            <AnimatedGroup
+              className="order-3 lg:col-start-1 lg:row-start-2 lg:self-start"
+              variants={{
+                container: {
+                  visible: {
+                    transition: { staggerChildren: 0.12, delayChildren: 0.46 },
                   },
-                  ...inViewTransition,
-                }}
-                viewport={viewport}
-              >
-                <p className="text-base text-muted-foreground lg:mt-4">
-                  A few minutes of SEL a day adds up. As students get the
-                  language to name what they feel and simple tools to reset, the
-                  whole room starts to settle.
-                </p>
-                <p className="mt-3 text-base text-muted-foreground">
-                  Over a few weeks, patterns start to show, so you can spot
-                  when more students are arriving calm, okay, and ready to
-                  learn.
-                </p>
-                {/* <a
+                },
+                ...inViewTransition,
+              }}
+              viewport={viewport}
+            >
+              <p className="text-base text-muted-foreground lg:mt-4">
+                Small moments add up. As students build social emotional skills and learn simple tools they can use every day, PatchUp helps you see how your classroom is changing over time.              </p>
+              <p className="mt-3 text-base text-muted-foreground">
+                PatchUp turns regular check-ins into clear trends, showing when students are ready to learn, where support is needed, and which programs are making a difference.
+              </p>
+              {/* <a
                   href="#pricing"
                   className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-violet-700 transition-all hover:gap-2"
                 >
                   See Classroom+
                   <ArrowRight className="size-4" />
                 </a> */}
-              </AnimatedGroup>
+            </AnimatedGroup>
           </div>
         </div>
       </div>

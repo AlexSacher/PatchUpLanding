@@ -50,12 +50,10 @@ export default function CallToAction() {
               Ready in minutes
             </span>
             <h2 className="mt-5 text-4xl font-semibold tracking-tight text-balance text-slate-950 md:text-5xl">
-              Bring whole-class SEL into tomorrow's lesson
+              Bring PatchUp into tomorrow's lesson
             </h2>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-balance text-slate-700">
-              Pick a lesson, activity, or check-in, share the class code, and
-              give every student a simple way to build empathy, reset, and
-              belong.
+              Pick a lesson, activity, or check-in, share the class code, and get everyone participating in seconds.
             </p>
             <div className="mt-9 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
               {/* <Button

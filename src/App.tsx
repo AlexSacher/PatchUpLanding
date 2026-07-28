@@ -4,9 +4,7 @@ import { BookOpen, Smile, Sparkles } from "lucide-react"
 import HeroSection from "@/components/hero-section"
 import FeaturesLibrary from "@/components/features-library"
 import FeaturesChart from "@/components/features-chart"
-import ClassroomShowcase from "@/components/classroom-showcase"
 import PricingTwo from "@/components/pricing-two"
-import CallToAction from "@/components/call-to-action"
 import CallToActionTwo from "@/components/call-to-action-2"
 import FooterSection from "@/components/footer"
 import ContactPage from "@/pages/contact-page"
@@ -27,7 +25,7 @@ function Home() {
             right into your day
           </>
         }
-        body="Step-by-step SEL and belonging lessons you can open and teach today, no prep, no planning. Each one gives students the language and tools to understand themselves and the people around them."
+        body="Step-by-step social emotional lessons you can use today, no prep, no planning. Each one gives students the language and tools to understand themselves and the people around them."
         cta="Get started free"
         video="/lesson5.mp4"
         aspectClassName="aspect-[4.3/3]"
@@ -63,7 +61,7 @@ function Home() {
             whenever you need it
           </>
         }
-        body="Breathing, grounding, gratitude, and more, drop-in activities you can run any moment of the day. Perfect for transitions, tough moments, or whenever the class needs to reset together."
+        body="Breathing, grounding, gratitude, creative expression, and more. Drop-in activities you can run any moment of the day. Perfect for transitions, tough moments, or whenever the class needs to reset together."
         cta="Get started free"
         video="/activity-demo.mp4"
         aspectClassName="aspect-[5/3]"

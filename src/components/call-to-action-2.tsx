@@ -32,7 +32,7 @@ export default function CallToActionTwo() {
             src="/hero-classroom-scene-clean.webp"
             alt=""
             aria-hidden
-        className="pointer-events-none absolute left-1/2 top-0 -z-20 h-full w-[110%] max-w-none -translate-x-[55%] md:-translate-x-[53%]  object-cover object-center"
+            className="pointer-events-none absolute left-1/2 top-0 -z-20 h-full w-[110%] max-w-none -translate-x-[55%] md:-translate-x-[53%]  object-cover object-center"
           />
           {/* White gradient wash so the scene fades softly into the card */}
           <div
@@ -58,12 +58,10 @@ export default function CallToActionTwo() {
               Ready in minutes
             </span> */}
             <h2 className="mt-4 text-[5vw] sm:text-2xl font-semibold tracking-tight text-balance text-slate-950 md:text-4xl">
-              Bring whole-class SEL into tomorrow's lesson
+              Bring PatchUp into tomorrow's lesson
             </h2>
             <p className="hidden md:block mt-4 max-w-sm text-base leading-7 font-normal text-balance text-black md:font-normal md:text-slate-700 ">
-              Pick a lesson, activity, or check-in, share the class code, and
-              give every student a simple way to build empathy, reset, and
-              belong.
+              Pick a lesson, activity, or check-in, share the class code, and get everyone participating in seconds.
             </p>
             <div className="mt-3 flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row">
               <Button
