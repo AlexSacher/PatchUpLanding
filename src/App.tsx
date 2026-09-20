@@ -9,6 +9,8 @@ import CallToActionTwo from "@/components/call-to-action-2"
 import FooterSection from "@/components/footer"
 import ContactPage from "@/pages/contact-page"
 import NotFoundPage from "@/pages/not-found-page"
+import BlogIndexPage from "@/pages/blog-index-page"
+import BlogPostPage from "@/pages/blog-post-page"
 
 function Home() {
   return (
@@ -102,6 +104,8 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/blog" element={<BlogIndexPage />} />
+        <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>
