@@ -17,7 +17,6 @@ export default function BlogPostPage() {
   if (!post) {
     return (
       <div className="flex min-h-screen flex-col">
-        <title>Post not found — PatchUp Blog</title>
         <HeroHeader />
         <main className="flex-1 pt-24 lg:pt-28">
           <div className="mx-auto max-w-3xl px-6 py-24 text-center">
@@ -42,7 +41,6 @@ export default function BlogPostPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <title>{`${meta.title} — PatchUp`}</title>
       <meta name="description" content={meta.excerpt} />
       <HeroHeader />
       <main className="flex-1 pt-24 lg:pt-28">

@@ -19,7 +19,6 @@ export default function BlogIndexPage() {
   if (posts.length === 0) {
     return (
       <div className="flex min-h-screen flex-col">
-        <title>Blog — PatchUp</title>
         <HeroHeader />
         <main className="flex-1 pt-24 lg:pt-28">
           <div className="mx-auto max-w-3xl px-6 py-24 text-center text-muted-foreground">
@@ -46,7 +45,6 @@ export default function BlogIndexPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <title>Blog — PatchUp</title>
       <meta
         name="description"
         content="SEL, intercultural communication, and classroom ideas from the PatchUp team."
