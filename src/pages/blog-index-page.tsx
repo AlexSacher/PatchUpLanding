@@ -31,9 +31,7 @@ export default function BlogIndexPage() {
   }
 
   const [hero, ...rest] = posts
-  const spotlightPosts = posts.filter((post) =>
-    post.meta.categories.includes("Intercultural Communication")
-  )
+  const recentPosts = rest.slice(0, 5)
 
   const filteredFeed =
     category === "All"
@@ -63,12 +61,18 @@ export default function BlogIndexPage() {
             </div>
             <div className="lg:col-span-1">
               <h2 className="font-heading text-lg font-semibold text-foreground">
-                Building belonging
+                Recent Posts
               </h2>
               <div className="mt-4">
-                {spotlightPosts.map((post) => (
-                  <BlogSidebarCard key={post.meta.slug} meta={post.meta} />
-                ))}
+                {recentPosts.length > 0 ? (
+                  recentPosts.map((post) => (
+                    <BlogSidebarCard key={post.meta.slug} meta={post.meta} />
+                  ))
+                ) : (
+                  <p className="text-sm text-muted-foreground">
+                    More posts coming soon.
+                  </p>
+                )}
               </div>
             </div>
           </div>
