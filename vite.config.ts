@@ -45,9 +45,9 @@ function renderHead(html: string, route: string, meta: PageMeta) {
     `<meta name="twitter:card" content="summary_large_image" />`,
   ].filter(Boolean)
 
-  return html
-    .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(meta.title)}</title>`)
-    .replace("</head>", `  ${tags.join("\n  ")}\n</head>`)
+  // The tab <title> is left as-is so it stays consistent across client-side
+  // navigation; page-specific titles only go in the link-preview tags.
+  return html.replace("</head>", `  ${tags.join("\n  ")}\n</head>`)
 }
 
 // GitHub Pages only serves files that exist, so every client-side route gets
