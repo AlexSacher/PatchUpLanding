@@ -6,7 +6,7 @@ export default function ContactPage() {
     return (
         <div className="flex min-h-screen flex-col">
             <HeroHeader />
-            <main className="flex-1 pt-36 lg:pt-40">
+            <main className="flex-1 pt-24 lg:pt-28">
                 <ContactEight />
             </main>
             <FooterSection />

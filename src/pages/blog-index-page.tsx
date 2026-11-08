@@ -20,7 +20,7 @@ export default function BlogIndexPage() {
     return (
       <div className="flex min-h-screen flex-col">
         <HeroHeader />
-        <main className="flex-1 pt-36 lg:pt-40">
+        <main className="flex-1 pt-24 lg:pt-28">
           <div className="mx-auto max-w-3xl px-6 py-24 text-center text-muted-foreground">
             No posts yet — check back soon.
           </div>
@@ -48,7 +48,7 @@ export default function BlogIndexPage() {
         content="SEL, intercultural communication, and classroom ideas from the PatchUp team."
       />
       <HeroHeader />
-      <main className="flex-1 pt-36 lg:pt-40">
+      <main className="flex-1 pt-24 lg:pt-28">
         <div className="mx-auto max-w-6xl px-6">
           {/* <p className="mt-3 max-w-2xl text-lg text-muted-foreground">
             SEL, intercultural communication, and classroom ideas from the

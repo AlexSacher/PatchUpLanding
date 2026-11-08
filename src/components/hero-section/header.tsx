@@ -1,5 +1,5 @@
 import { Logo } from '@/components/logo'
-import { ArrowRight, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
 import React from 'react'
@@ -15,8 +15,6 @@ const menuItems = [
 ]
 
 const signupUrl = 'https://patchup.ca/register'
-// Conference banner, remove after the event.
-const conferenceUrl = 'https://patchup.ca/mind-over-matters-2026'
 
 export const HeroHeader = () => {
     const [menuState, setMenuState] = React.useState(false)
@@ -36,21 +34,6 @@ export const HeroHeader = () => {
                         ? 'border-border bg-background lg:bg-background/60 lg:backdrop-blur-lg'
                         : 'border-transparent bg-background/0',
                 )}>
-                <a
-                    href={conferenceUrl}
-                    className="bg-primary hover:bg-primary/90 flex h-11 items-center justify-center gap-2 px-4 text-sm font-semibold text-white transition-colors sm:text-base">
-                    <span className="relative flex size-2.5 shrink-0">
-                        <span className="absolute inline-flex size-full animate-ping rounded-full bg-white opacity-75" />
-                        <span className="relative inline-flex size-2.5 rounded-full bg-white" />
-                    </span>
-                    <span className="truncate">
-                        <span className="sm:hidden">Mind Over Matters 2026? Tap here</span>
-                        <span className="hidden sm:inline">
-                            At Mind Over Matters 2026? Visit our conference page
-                        </span>
-                    </span>
-                    <ArrowRight className="size-4 shrink-0" />
-                </a>
                 <div className="mx-auto max-w-6xl px-6 lg:px-12">
                     <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
                         <div className="flex w-full justify-between lg:w-auto">

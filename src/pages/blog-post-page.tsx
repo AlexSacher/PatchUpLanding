@@ -18,7 +18,7 @@ export default function BlogPostPage() {
     return (
       <div className="flex min-h-screen flex-col">
         <HeroHeader />
-        <main className="flex-1 pt-36 lg:pt-40">
+        <main className="flex-1 pt-24 lg:pt-28">
           <div className="mx-auto max-w-3xl px-6 py-24 text-center">
             <h1 className="font-heading text-3xl font-semibold tracking-tight text-balance text-foreground">
               Post not found
@@ -43,7 +43,7 @@ export default function BlogPostPage() {
     <div className="flex min-h-screen flex-col">
       <meta name="description" content={meta.excerpt} />
       <HeroHeader />
-      <main className="flex-1 pt-36 lg:pt-40">
+      <main className="flex-1 pt-24 lg:pt-28">
         <article className="mx-auto max-w-6xl px-6">
           <div className="grid gap-10 lg:grid-cols-3">
             <div ref={contentRef} className="lg:col-span-2">
